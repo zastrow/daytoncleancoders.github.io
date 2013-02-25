@@ -56,7 +56,8 @@ body {
    Links
    ========================================================================== */
 a {
-  text-decoration: none; }
+  text-decoration: none; 
+  color: black; }
 
 a:visited {
   color: #a0ca38; }
@@ -559,7 +560,6 @@ footer {
   color: white;
   width: 100%;
   float: left;
-  height: 7em;
   background-color: #9BC236;
   padding: 20px 9%;
   font-size: 1.5em;
