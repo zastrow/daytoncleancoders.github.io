@@ -4,11 +4,11 @@ h4 {
 .main .wrapper {
   position: relative; }
 
-.typography {
+.banner {
   position: absolute;
   width: 100%; }
 
-.typography p {
+.banner p {
   max-width: 650px;
   margin: 0 auto; }
 
