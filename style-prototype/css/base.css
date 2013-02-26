@@ -75,23 +75,23 @@ a:hover, a:active {
 
 @font-face {
     font-family: 'outagecut';
-    src: url('outage_cut-webfont.eot');
-    src: url('outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
-         url('outage_cut-webfont.woff') format('woff'),
-         url('outage_cut-webfont.ttf') format('truetype'),
-         url('outage_cut-webfont.svg#outagecut') format('svg');
+    src: url('../fonts/outage_cut-webfont.eot');
+    src: url('../fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/outage_cut-webfont.woff') format('woff'),
+         url('../fonts/outage_cut-webfont.ttf') format('truetype'),
+         url('../fonts/outage_cut-webfont.svg#outagecut') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
 @font-face {
-  font-family: 'Avenir Next LT W01 Demi';
-  src:  url('Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
-  src:  url('Fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
-        url('Fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
-        url('Fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
-        url('Fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
+  font-family: 'avenir';
+  src:  url('../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
+  src:  url('../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
+        url('../fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
+        url('../fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
+        url('../fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
 }
 
 abbr[title] {
@@ -422,7 +422,7 @@ td {
   box-sizing: border-box; }
 
 body {
-  font: 100%/1.5 "'Helvetica Neue', Helvetica, Arial, sans-serif";
+  font: 100%/1.5 'avenir', sans-serif;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIKvX7/+B9Hc3NyMjCAOiAGTwBRA1wIANl0XwTXCU78AAAAASUVORK5CYII=) repeat; }
   .lt-ie9 body {
     min-width: 960px; }
@@ -462,15 +462,18 @@ header {
 /* TYPOGRAPHY */
 .banner {
   background: url('../img/banner.jpg') #8a8a8a center -20px repeat;
-  float: left;
   padding: 50px 9% 5%;
   border-top: 8px solid #a0ca38; }
   .lt-ie8 .banner {
     padding: 50px 0; }
-.banner h2 {
+.banner h1, .banner p {
+  text-align: center;
   color: white;
   margin: 0;
   line-height: 1.6em; }
+.banner p {
+  font-size: 1.2em;
+}
 .banner hgroup {
   max-width: 600px;
   margin: 0 auto;
@@ -481,7 +484,7 @@ header {
 /* PRIMARY HEADING */
 h1 {
   margin: 0 0 0.3em 0;
-  font-family: 'Avenir Next LT W01 Demi', sans-serif;
+  font-family: 'outagecut', sans-serif;
   font-size: 2em;
   font-weight: 900;
   line-height: 1;
@@ -489,7 +492,7 @@ h1 {
   color: black; }
 
 h2 {
-  font-family: 'Avenir Next LT W01 Demi', sans-serif;
+  font-family: 'outagecut', sans-serif;
   font-weight: 400;
   text-align: center;
   color: black;
@@ -497,21 +500,21 @@ h2 {
   margin-top: 0px; }
 
 h3, .event .time, .event .place, .team-stat .name {
-  font-family: 'Avenir Next LT W01 Demi', sans-serif;
+  font-family: 'avenir', sans-serif;
   font-size: .75em;
   letter-spacing: .3em;
   color: black;
   margin-top: 0px; }
 
 h4 {
-  font-family: 'Avenir Next LT W01 Demi', sans-serif;
+  font-family: 'avenir', sans-serif;
   font-size: .8em;
   font-weight: 500;
   color: #265e67; }
 
 /* PARAGRAPH */
 p {
-  font-family: 'Avenir Next LT W01 Demi', sans-serif;
+  font-family: 'avenir', sans-serif;
   font-size: 0.8em;
   font-weight: 500;
   line-height: 1.6;
