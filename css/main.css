@@ -12,7 +12,6 @@
 
 @import '_header.css';
 @import '_nav.css';
-@import '_intro.css';
 @import '_body.css';
 @import '_footer.css';
 
@@ -134,7 +133,6 @@ a {
 body {
     font-family: 'avenir', sans-serif;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIKvX7/+B9Hc3NyMjCAOiAGTwBRA1wIANl0XwTXCU78AAAAASUVORK5CYII=) repeat;
-    text-align: center;
 }
 
 h1 {
@@ -167,7 +165,7 @@ h6 {
     margin: 2.33em 0;
 }
 
-header h1, header h2, #upcoming h3, #upcoming h4, #past h3, #past h4 {
+header h1, .intro h2, #upcoming h3, #upcoming h4, #past h3, #past h4 {
     font-family: 'outage', sans-serif;
 }
 
@@ -176,7 +174,8 @@ header h1, header h2, #upcoming h3, #upcoming h4, #past h3, #past h4 {
    ========================================================================== */
 
 body {
-  padding: 2em 5%;
+  text-align: center;
+  border-top: 16px solid #8a8a8a;
 }
 
 /* ==========================================================================
