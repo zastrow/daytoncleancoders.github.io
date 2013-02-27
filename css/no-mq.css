@@ -56,11 +56,10 @@ body {
    Links
    ========================================================================== */
 a {
-  text-decoration: none; 
-  color: black; }
+  text-decoration: none; }
 
 a:visited {
-  color: #a0ca38; }
+  color: #a3eaf5; }
 
 a:focus {
   outline: thin dotted; }
@@ -72,28 +71,6 @@ a:hover, a:active {
 /* =============================================================================
    Typography
    ========================================================================== */
-
-@font-face {
-    font-family: 'outagecut';
-    src: url('../../fonts/outage_cut-webfont.eot');
-    src: url('../../fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/outage_cut-webfont.woff') format('woff'),
-         url('../../fonts/outage_cut-webfont.ttf') format('truetype'),
-         url('../../fonts/outage_cut-webfont.svg#outagecut') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
-@font-face {
-  font-family: 'avenir';
-  src:  url('../../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
-  src:  url('../../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
-        url('../../fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
-        url('../../fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
-        url('../../fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
-}
-
 abbr[title] {
   border-bottom: 1px dotted; }
 
@@ -183,7 +160,6 @@ nav ul, nav ol {
  * 1. Improve image quality when scaled in IE7: h5bp.com/d
  * 2. Remove the gap between images and borders on image containers: h5bp.com/i/440
  */
-
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
@@ -192,7 +168,6 @@ img {
 /*
  * Correct overflow not hidden in IE9
  */
-
 svg:not(:root) {
   overflow: hidden; }
 
@@ -422,8 +397,8 @@ td {
   box-sizing: border-box; }
 
 body {
-  font: 100%/1.5 'avenir', sans-serif;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIKvX7/+B9Hc3NyMjCAOiAGTwBRA1wIANl0XwTXCU78AAAAASUVORK5CYII=) repeat; }
+  font: 100%/1.5 "'Helvetica Neue', Helvetica, Arial, sans-serif";
+  background: #fff; }
   .lt-ie9 body {
     min-width: 960px; }
 
@@ -437,20 +412,33 @@ body {
 
 /* HEADER & LOGO */
 header {
-  border-bottom: solid 1px #B3B3B3;
+  float: left;
   width: 100%;
-  text-align: center;
-  padding: 20px 0; }
+  background-color: #252525; }
   header img {
-    margin: 0 auto;
-    max-width: 200px; }
+    float: left;
+    max-width: 154px;
+    margin: 0 auto; }
   header .logo {
+    float: left;
     display: inline;
-    margin: 0 auto;
-    background-color: #50b7c8; }
+    margin-right: 2em;
+    background-color: #50b7c8;
+    min-width: 5.5em;
+    min-height: 5.5em; }
+  header .logo img {
+    max-width: 90px;
+    max-height: 81px; }
+  header .logotype {
+    display: inline;
+    float: left;
+    padding-top: 26px; }
+  header .logotype img {
+    max-height: 30px; }
 
 /* NAV */
-
+nav {
+  display: none; }
 
 /* MAIN */
 .main {
@@ -460,61 +448,46 @@ header {
   font-size: 1em; }
 
 /* TYPOGRAPHY */
-.banner {
-  background: url('../../img/banner.jpg') #8a8a8a center -20px repeat;
-  padding: 50px 9% 5%;
-  border-top: 8px solid #a0ca38; }
-  .lt-ie8 .banner {
+.typography {
+  float: left;
+  background-color: #cbf8ff;
+  padding: 50px 9% 5%; }
+  .lt-ie8 .typography {
     padding: 50px 0; }
-.banner h1, .banner p {
-  text-align: center;
-  color: white;
-  margin: 0;
-  line-height: 1.6em; }
-.banner p {
-  font-size: 1.2em;
-}
-.banner hgroup {
-  max-width: 600px;
-  margin: 0 auto;
-  border: 5px solid white;
-  padding: 30px;
-}
 
 /* PRIMARY HEADING */
 h1 {
   margin: 0 0 0.3em 0;
-  font-family: 'outagecut', sans-serif;
+  font-family: 'Avenir Next LT W01 Bold', sans-serif;
   font-size: 2em;
   font-weight: 900;
   line-height: 1;
   text-align: center;
-  color: black; }
+  color: #265e67; }
 
 h2 {
-  font-family: 'outagecut', sans-serif;
-  font-weight: 400;
+  font-family: 'Avenir Next LT W01 Bold', sans-serif;
   text-align: center;
-  color: black;
-  line-height: 1.2em;
+  color: #50b7c8;
+  line-height: 1em;
   margin-top: 0px; }
 
 h3, .event .time, .event .place, .team-stat .name {
-  font-family: 'avenir', sans-serif;
+  font-family: 'Avenir Next LT W01 Bold', sans-serif;
   font-size: .75em;
   letter-spacing: .3em;
   color: black;
   margin-top: 0px; }
 
 h4 {
-  font-family: 'avenir', sans-serif;
+  font-family: "museo-slab", serif;
   font-size: .8em;
   font-weight: 500;
   color: #265e67; }
 
 /* PARAGRAPH */
 p {
-  font-family: 'avenir', sans-serif;
+  font-family: "museo-slab", serif;
   font-size: 0.8em;
   font-weight: 500;
   line-height: 1.6;
@@ -546,11 +519,17 @@ p {
     margin: 1%;
     background-color: #222; }
   .colors .primary {
-    background-color: #9bc236; }
+    background-color: #50b7c8; }
   .colors .secondary {
-    background-color: black; }
+    background-color: #252525; }
   .colors .neutral {
-    background-color: #8A8A8A; }
+    background-color: #265e67; }
+  .colors .secondary1 {
+    background-color: #a3eaf5; }
+  .colors .secondary2 {
+    background-color: #f0592b; }
+  .colors .secondary3 {
+    background-color: #3f3d3d; }
 
 /* BUTTON */
 .button {
@@ -563,74 +542,144 @@ p {
     text-align: center; }
   .button a {
     list-style: none;
-    background-color: #CACACA;
+    background-color: #265e67;
     padding: 10px 20px 12px;
-    border-radius: 1px;
+    border-radius: 4px;
     text-align: center;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-weight: 300;
-    letter-spacing: .15em; }
+    font-family: 'Avenir Next LT W01 Bold';
+    font-weight: 900;
+    letter-spacing: .1em; }
   .button a:hover {
-    background-color: #BEBEBE; }
-  .button a:visited {
-    color: black; }
+    background-color: #1b444a; }
   .button img {
-    width: 24px;
+    width: 36px;
     padding-right: 10px;
     padding-bottom: 2px; }
 
-/* FOOTER */
-
-footer {
-  color: white;
+/* EVENT */
+.event {
   width: 100%;
+  min-height: 400px;
+  background-image: url("/style-prototype/img/brworkshop.jpg");
+  background-repeat: none;
+  background-color: #50b7c8;
   float: left;
-  background-color: #9BC236;
-  padding: 20px 9%;
-  font-size: 1.5em;
-  border-top: solid 1px #B3B3B3;
-  border-bottom: solid 30px black;
-}
+  margin-top: 3em; }
+  .event header {
+    float: left; }
+  .event header p {
+    background-color: #252525;
+    color: #7b7b7b;
+    font-family: 'Avenir Next LT W01 Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    text-align: center; }
+  .event img {
+    background-color: none;
+    margin-top: -16px;
+    display: block;
+    margin: 0 auto; }
+  .event a {
+    text-transform: uppercase;
+    font-family: 'Avenir Next LT W01 Bold', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .3em;
+    list-style: none;
+    color: #d7f3f7;
+    text-decoration: none;
+    text-align: center;
+    margin: 2em 2em 3em 2em;
+    display: block; }
+  .event .time, .event .place {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2.5em;
+    display: block; }
 
-@media (min-width: 700px) {
-  h4 {
-    font-size: 1em; }
+/* TEAM STATS*/
+.team-stat {
+  width: 100%;
+  background-color: #a3eaf5;
+  float: left;
+  padding: 7% 18% 5% 18%; }
+  .team-stat img {
+    width: 235px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px; }
+  .team-stat h4 {
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0 20% 0 20%; }
+  .team-stat .name {
+    padding: 10px 0 10px 0;
+    text-align: center;
+    letter-spacing: 0;
+    background-image: url("/style-prototype/img/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-size: 1em;
+    color: #265e67;
+    min-width: 250px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10%; }
 
-  .main .wrapper {
-    position: relative; }
-
-  .typography {
+/* DEVICE */
+.device {
+  width: 100%;
+  background-color: #CBF8FF;
+  float: left;
+  padding: 7% 10% 5% 10%; }
+  .device img {
     width: 100%; }
+  .device h4 {
+    text-align: center;
+    margin: 0 0 6% 0; }
+  .lt-ie8 .device {
+    padding: 0; }
 
-  .typography p {
-    max-width: 650px;
-    margin: 0 auto; }
+/* import 700 */
+h4 {
+  font-size: 1em; }
 
-  .swatches {
-    float: left;
-    width: 100%;
-    padding: 7% 5% 5% 5%;
-    margin: 0 auto; }
-    .lt-ie9 .swatches {
-      padding: 7% 0; }
+.main .wrapper {
+  position: relative; }
 
-  .colors {
-    padding-bottom: 0%; }
+.typography {
+  width: 100%; }
 
-  .colors li {
-    width: 31%;
-    height: 1em;
-    padding-bottom: 15%; }
+.typography p {
+  max-width: 650px;
+  margin: 0 auto; }
 
-  .event h3, .event .time, .event .place, .event .team-stat .name, .team-stat .event .name {
-    margin-top: 4.5em; }
+.swatches {
+  float: left;
+  width: 100%;
+  padding: 7% 5% 5% 5%;
+  margin: 0 auto; }
+  .lt-ie9 .swatches {
+    padding: 7% 0; }
 
-  .team-stat {
-    width: 50%;
-    margin-top: 3em;
-    padding: 4% 0 0 0;
-    height: 450px; } }
-/* @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-  @import "2x";
-} */
+.colors {
+  padding-bottom: 0%; }
+
+.colors li {
+  width: 14.5%;
+  height: 1em;
+  padding-bottom: 15%; }
+
+.event {
+  width: 50%;
+  height: 450px; }
+  .lt-ie8 .event {
+    padding: 0 0 4%; }
+
+.event h3, .event .time, .event .place, .event .team-stat .name, .team-stat .event .name {
+  margin-top: 4.5em; }
+
+.team-stat {
+  width: 50%;
+  margin-top: 3em;
+  padding: 4% 0 0 0;
+  height: 450px; }
