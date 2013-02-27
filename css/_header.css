@@ -6,24 +6,36 @@
   text-indent: -9999px;
 }
 
-header h1 {
-  text-transform: uppercase;
+.intro .wrapper {
+  background: white;
+  margin-top: 4em;
+  margin-bottom: 8em;
+  padding: 2em 0;
 }
 
-header h2 {
+.intro h2 {
   color: #8a8a8a;
   display: inline-block;
   font-size: .7em;
-  margin-top: 9em;
-  margin-bottom: 11em;
+  text-transform: uppercase;
 }
 
-header span.left, header span.right {
-  border-top: 1px solid #8A8A8A;
-  border-bottom: 1px solid #8A8A8A;
+.intro span.left, .intro span.right {
+  border-top: 1px solid #AFAFAF;
+  border-bottom: 1px solid #AFAFAF;
   padding: 1.9em 0 1.9em;
 }
 
-header span.left {
+.intro span.left {
   margin-right: 250px;
+}
+
+.intro h2:before {
+  content: "> ";
+  color: #9bc236;
+}
+
+.intro h2:after {
+  content: " <";
+  color: #9bc236;
 }
