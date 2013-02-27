@@ -461,7 +461,7 @@ header {
 
 /* TYPOGRAPHY */
 .banner {
-  background: url('../../img/banner.jpg') #8a8a8a center -20px repeat;
+  background: url('../img/banner.jpg') #8a8a8a center -20px repeat;
   padding: 50px 9% 5%;
   border-top: 8px solid #a0ca38; }
   .lt-ie8 .banner {
