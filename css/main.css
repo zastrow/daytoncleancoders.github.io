@@ -7,13 +7,34 @@
  */
 
  /* ==========================================================================
-   Component Imports
+   Imports
    ========================================================================== */
 
- @import '_header.css'
- @import '_nav.css'
- @import '_body.css'
- @import '_footer.css'
+@import '_header.css';
+@import '_nav.css';
+@import '_body.css';
+@import '_footer.css';
+
+@import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
+@font-face {
+  font-family: 'avenir';
+  src:  url('../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
+  src:  url('../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
+        url('../fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
+        url('../fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
+        url('../fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
+}
+
+ @font-face {
+    font-family: 'outage';
+    src: url('../fonts/outage_cut-webfont.eot');
+    src: url('../fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/outage_cut-webfont.woff') format('woff'),
+         url('../fonts/outage_cut-webfont.ttf') format('truetype'),
+         url('../fonts/outage_cut-webfont.svg#outagecut') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -99,24 +120,63 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
+   Links and Buttons
    ========================================================================== */
 
+a {
+}
 
+/* ==========================================================================
+   Typography and Fonts
+   ========================================================================== */
 
+body {
+    font-family: 'avenir', sans-serif;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIKvX7/+B9Hc3NyMjCAOiAGTwBRA1wIANl0XwTXCU78AAAAASUVORK5CYII=) repeat;
+    text-align: center;
+}
 
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
 
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
 
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
 
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
 
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
 
+h6 {
+    font-size: 0.67em;
+    margin: 2.33em 0;
+}
 
+header h1, header h2, #upcoming h3, #upcoming h4, #past h3, #past h4 {
+    font-family: 'outage', sans-serif;
+}
 
+/* ==========================================================================
+   Document Style
+   ========================================================================== */
 
-
-
-
-
+body {
+  padding: 2em 5%;
+}
 
 /* ==========================================================================
    Helper classes
@@ -224,10 +284,6 @@ textarea {
    Theses examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

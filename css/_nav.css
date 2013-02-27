@@ -1,0 +1,27 @@
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  -webkit-margin-before:  0;
+  -webkit-margin-after:   0;
+  -webkit-margin-start:   0;
+  -webkit-margin-end:     0;
+  -webkit-padding-start:  0;
+}
+
+nav li {
+  display: inline;
+  padding: 0 2%;
+}
+
+nav a {
+  background: #F0F0F0;
+  -webkit-border-radius:  1px;
+  -moz-border-radius:     1px; 
+  border-radius:          1px;
+  color: #8A8A8A;
+  padding: 4px 8px;
+  text-decoration: none;
+}
