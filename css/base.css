@@ -75,11 +75,11 @@ a:hover, a:active {
 
 @font-face {
     font-family: 'outagecut';
-    src: url('../../fonts/outage_cut-webfont.eot');
-    src: url('../../fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/outage_cut-webfont.woff') format('woff'),
-         url('../../fonts/outage_cut-webfont.ttf') format('truetype'),
-         url('../../fonts/outage_cut-webfont.svg#outagecut') format('svg');
+    src: url('../fonts/outage_cut-webfont.eot');
+    src: url('../fonts/outage_cut-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/outage_cut-webfont.woff') format('woff'),
+         url('../fonts/outage_cut-webfont.ttf') format('truetype'),
+         url('../fonts/outage_cut-webfont.svg#outagecut') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -87,11 +87,11 @@ a:hover, a:active {
 @import url("http://fast.fonts.com/t/1.css?apiType=css&projectid=229f654c-f062-4aa1-9cd0-067c8b3f856d");
 @font-face {
   font-family: 'avenir';
-  src:  url('../../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
-  src:  url('../../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
-        url('../../fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
-        url('../../fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
-        url('../../fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
+  src:  url('../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix');
+  src:  url('../fonts/12d643f2-3899-49d5-a85b-ff430f5fad15.eot?#iefix') format('eot'),
+        url('../fonts/91b50bbb-9aa1-4d54-9159-ec6f19d14a7c.woff') format('woff'),
+        url('../fonts/a0f4c2f9-8a42-4786-ad00-fce42b57b148.ttf') format('truetype'),
+        url('../fonts/99affa9a-a5e9-4559-bd07-20cf0071852d.svg#99affa9a-a5e9-4559-bd07-20cf0071852d') format('svg');
 }
 
 abbr[title] {
@@ -461,7 +461,7 @@ header {
 
 /* TYPOGRAPHY */
 .banner {
-  background: url('../../img/banner.jpg') #8a8a8a center -20px repeat;
+  background: url('../img/banner.jpg') #8a8a8a center -20px repeat;
   padding: 50px 9% 5%;
   border-top: 8px solid #a0ca38; }
   .lt-ie8 .banner {
