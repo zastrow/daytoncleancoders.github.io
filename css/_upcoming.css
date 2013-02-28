@@ -5,7 +5,7 @@
 }
 
 .article-wrapper {
-  width: 46em;
+  width: 44em;
   margin: 0 auto;
 }
 
@@ -101,6 +101,35 @@
 
 @media screen and (max-width: 45em) {
   #upcoming article {
-    margin: 0 auto 2em;
+    float: none;
+    margin: 0 auto 1.5em;
+  }
+
+  #upcoming {
+    background: #313131;
+  }
+
+  .locations-note {
+    padding: 0 10% 1.5em;
+  }
+
+  .article-wrapper {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  #upcoming article {
+    width: 16em;
+  }
+}
+
+@media screen and (max-width: 17em) {
+  #upcoming article {
+    width: auto;
+  }
+
+  #upcoming .location {
+    border: none;
   }
 }
