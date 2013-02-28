@@ -9,10 +9,21 @@
 
 #upcoming article {
   width: 19em;
-  border: 5px solid black;
-  padding: 0.5em 0 2em;
   float:left;
   margin: 0 1.5em;
+}
+
+#upcoming article h3 {
+  font-size: 1.6em;
+}
+
+#upcoming article h4 {
+  font-size: 1.9em;
+}
+
+#upcoming .location {
+  border: 5px solid black;
+  padding: 4.5em 0 2em;
 }
 
 #upcoming address {
@@ -30,6 +41,28 @@
   -webkit-border-radius:  1px;
   -moz-border-radius:     1px; 
   border-radius:          1px;
+}
+
+.arrow {
+  /*background: url(../img/arrow.png) no-repeat center;*/
+  background: #9BC236;
+  letter-spacing: .3em;
+  font-size: .8em;
+  margin: 0 auto -2.9em;
+  width: 8em;
+  padding: 1em 0 0.5em;
+  position: relative;
+  z-index: 1;
+}
+
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-top: 50px solid #9BC236;
+  margin: 1.5em auto -4.2em;
+  position: relative;
 }
 
 .locations-note {
