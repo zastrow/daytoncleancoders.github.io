@@ -1,6 +1,19 @@
 #upcoming {
+  background: #313131 url(../img/photo.jpg) no-repeat center;
+  color: white;
+  margin: 0 auto;
+}
+
+.article-wrapper {
   width: 46em;
   margin: 0 auto;
+}
+
+#upcoming h2 {
+  text-transform: uppercase;
+  font-size: .8em;
+  margin: 0;
+  padding: 1.3em 0;
 }
 
 #upcoming h3 {
@@ -15,19 +28,30 @@
 
 #upcoming article h3 {
   font-size: 1.6em;
+  letter-spacing: .15em;
+  margin: 0;
+  margin-bottom: .5em;
 }
 
 #upcoming article h4 {
   font-size: 1.9em;
+  margin: 0 0 .6em;
 }
 
 #upcoming .location {
-  border: 5px solid black;
+  border: 5px solid white;
   padding: 4.5em 0 2em;
 }
 
 #upcoming address {
   margin-bottom: 1em;
+  font-style: normal;
+}
+
+.locations-detail {
+  display: inline-block;
+  font-size: .7em;
+  margin: 1.2em auto 1em;
 }
 
 #upcoming a {
@@ -36,16 +60,18 @@
   text-decoration: none;
   color: black;
   padding: .5em .75em;
-  font-size: .9em;
-  font-weight: 300;
+  font-size: .8em;
+  font-weight: 400;
   -webkit-border-radius:  1px;
   -moz-border-radius:     1px; 
   border-radius:          1px;
+  letter-spacing: .1em;
 }
 
 .arrow {
   /*background: url(../img/arrow.png) no-repeat center;*/
   background: #9BC236;
+  color: black;
   letter-spacing: .3em;
   font-size: .8em;
   margin: 0 auto -2.9em;
@@ -66,8 +92,11 @@
 }
 
 .locations-note {
+  font-weight: 200;
   clear: both;
-  padding-top: 1.5em;
+  padding: 1.5em 0;
+  max-width: 30em;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 45em) {
