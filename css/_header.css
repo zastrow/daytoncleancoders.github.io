@@ -11,7 +11,7 @@
   background: white;
   margin-top: 4em;
   margin-bottom: 5.5em;
-  padding: 2em 0;
+  padding: 1em 0;
 }
 
 .wrapper h2 {
@@ -19,11 +19,12 @@
   display: inline-block;
   font-size: .7em;
   text-transform: uppercase;
+  border-top: 1px solid #DBDBDB;
+  border-bottom: 1px solid #DBDBDB;
+  padding: 1.5em 0;
 }
 
 .wrapper span.left, .wrapper span.right {
-  border-top: 1px solid #AFAFAF;
-  border-bottom: 1px solid #AFAFAF;
   padding: 1.9em 0 1.9em;
 }
 
@@ -63,7 +64,11 @@ header p {
 
   .wrapper {
     margin: 1.15em 0 1.25em 0;
-    padding: .7em;
+    padding: .4em 0;
+  }
+
+  .wrapper h2 {
+    padding: .75em 0;
   }
 
   .wrapper span.left, .wrapper span.right {
@@ -76,5 +81,13 @@ header p {
 
   header p {
     clear: left;
+    font-size: 1.3em;
+    padding: 1em 10%;
+  }
+}
+
+@media screen and (max-width: 35em) {
+  header p {
+    padding: 1em 4%;
   }
 }
