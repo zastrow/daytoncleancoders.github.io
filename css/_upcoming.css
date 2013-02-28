@@ -1,0 +1,44 @@
+#upcoming {
+  width: 46em;
+  margin: 0 auto;
+}
+
+#upcoming h3 {
+  color: #9BC236;
+}
+
+#upcoming article {
+  width: 19em;
+  border: 5px solid black;
+  padding: 0.5em 0 2em;
+  float:left;
+  margin: 0 1.5em;
+}
+
+#upcoming address {
+  margin-bottom: 1em;
+}
+
+#upcoming a {
+  background: #B3B3B3;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: .5em .75em;
+  font-size: .9em;
+  font-weight: 300;
+  -webkit-border-radius:  1px;
+  -moz-border-radius:     1px; 
+  border-radius:          1px;
+}
+
+.locations-note {
+  clear: both;
+  padding-top: 1.5em;
+}
+
+@media screen and (max-width: 45em) {
+  #upcoming article {
+    margin: 0 auto 2em;
+  }
+}
