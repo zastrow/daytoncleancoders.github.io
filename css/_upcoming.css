@@ -9,18 +9,19 @@
   margin: 0 auto;
 }
 
-#upcoming h2 {
+#upcoming h2, #past h2 {
   text-transform: uppercase;
   font-size: .8em;
   margin: 0;
   padding: 1.3em 0;
+  font-weight: 200;
 }
 
 #upcoming h3 {
   color: #9BC236;
 }
 
-#upcoming article {
+#upcoming article, #past article {
   width: 19em;
   float:left;
   margin: 0 1.5em;
