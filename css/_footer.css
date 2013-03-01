@@ -29,20 +29,31 @@ footer p {
   float: left;
 }
 
-footer li {
-  display: inline;
+footer ul {
+  float: left;
+  margin-top: 1em;
 }
 
-.icon-github, .icon-twitter {
+footer li {
+  display: inline-block;
+  height: 4em;
+  width: 4em;
   background: black;
-  color: #88A835;
-  font-size: 3em;
-  text-decoration: none;
   -webkit-border-radius:  50px;
   -moz-border-radius:     50px; 
   border-radius:          50px;
+  margin-left: 0.8em;
+}
+
+.icon-github, .icon-twitter {
+  color: #88A835;
+  font-size: 2.3em;
+  text-decoration: none;
   display: inline-block;
-  width: 1.5em;
+  text-align: center;
+  height: 1.6em;
+  width: 1.75em;
+  padding-top: 0.22em;
 }
 
 .icon-github:before, .icon-twitter:before {
@@ -53,9 +64,28 @@ footer li {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
+
 .icon-github:before {
   /*content: "\74";*/
 }
+
 .icon-twitter:before {
   /*content: "\67";*/
 }
+
+.copyright {
+  background: black;
+  color: #686868;
+  padding: 2em 0;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.copyright small {
+  display: block;
+  max-width: 70em;
+  margin: 0 auto;
+}
+
+
