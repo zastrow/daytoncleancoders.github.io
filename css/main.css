@@ -47,21 +47,6 @@
   font-style: normal;
 }
 
-.icon-github:before, .icon-twitter:before {
-  font-family: 'ddc-social';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-}
-.icon-github:before {
-  /*content: "\74";*/
-}
-.icon-twitter:before {
-  /*content: "\67";*/
-}
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */

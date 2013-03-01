@@ -13,7 +13,7 @@ footer {
   margin: 0 auto;
 }
 
-footer span {
+footer .black-text {
   color: black;
   font-weight: normal;
 }
@@ -29,14 +29,33 @@ footer p {
   float: left;
 }
 
-footer ul a {
-  font-size: 3em;
-  text-decoration: none;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px; 
-  border-radius: 10px;
-}
-
 footer li {
   display: inline;
+}
+
+.icon-github, .icon-twitter {
+  background: black;
+  color: #88A835;
+  font-size: 3em;
+  text-decoration: none;
+  -webkit-border-radius:  50px;
+  -moz-border-radius:     50px; 
+  border-radius:          50px;
+  display: inline-block;
+  width: 1.5em;
+}
+
+.icon-github:before, .icon-twitter:before {
+  font-family: 'ddc-social';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-github:before {
+  /*content: "\74";*/
+}
+.icon-twitter:before {
+  /*content: "\67";*/
 }
