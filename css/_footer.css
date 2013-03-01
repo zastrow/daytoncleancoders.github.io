@@ -1,4 +1,42 @@
 footer {
+  background: #88A835;
+  color: white;
   clear: left;
-  margin-top: 5em;
+  padding: 1.2em 0;
+  text-align: left;
+  font-weight: 300;
+  font-size: 1.2em;
+}
+
+.footer-wrapper {
+  max-width: 35em;
+  margin: 0 auto;
+}
+
+footer span {
+  color: black;
+  font-weight: normal;
+}
+
+footer ul, footer ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer p {
+  width: 70%;
+  float: left;
+}
+
+footer ul a {
+  font-size: 3em;
+  text-decoration: none;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; 
+  border-radius: 10px;
+}
+
+footer li {
+  display: inline;
 }
