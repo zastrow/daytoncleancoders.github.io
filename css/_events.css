@@ -7,6 +7,7 @@
 .article-wrapper {
   display: inline-block;
   margin: 0 auto;
+  max-width: 60em;
 }
 
 #upcoming h2, #past h2 {
@@ -157,11 +158,14 @@
   }
 
   #past article {
-    padding: 0.4em 0.4em 1.6em;
-    width: 10em;
-    margin: auto 0.6em;
+    margin: 0 0.5em;
     margin-bottom: 1em;
-    min-height: 11.7em;
+    min-height: 10.6em;
+    width: 15.8em;
+  }
+
+  #past h4 {
+    min-height: 4em;
   }
 
 }
@@ -170,6 +174,14 @@
   #upcoming article {
     width: 15.3em;
     margin: 0 0.35em;
+  }
+
+  #past article {
+    width: 11.9em;
+  }
+
+  #past h4 {
+    min-height: 6em;
   }
 
 }
