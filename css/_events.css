@@ -177,7 +177,7 @@
   }
 
   #past article {
-    width: 11.9em;
+    width: 11.7em;
   }
 
   #past h4 {
@@ -196,13 +196,19 @@
     background: #313131;
   }
 
+  #past article {
+    width: 9.4em;
+    margin: 0 0.3em 1em;
+    padding: 0.4em 0.7em 0.9em;
+  }
+
+  #past a, #past a:visited {
+    padding: 0.6em 0.5em 0.5em 3em;
+  }
+
 }
 
 @media screen and (max-width: 30em) {
-
-  #upcoming article {
-/*    width: 16em;*/
-  }
 
   #past h4 {
     font-size: 0.9em;
