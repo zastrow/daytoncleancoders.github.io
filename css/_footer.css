@@ -9,7 +9,7 @@ footer {
 }
 
 .footer-wrapper {
-  max-width: 35em;
+  max-width: 43em;
   margin: 0 auto;
 }
 
@@ -25,7 +25,7 @@ footer ul, footer ol {
 }
 
 footer p {
-  width: 70%;
+  width: 76%;
   float: left;
 }
 
@@ -84,7 +84,7 @@ footer li {
 
 .copyright small {
   display: block;
-  max-width: 70em;
+  max-width: 86em;
   margin: 0 auto;
 }
 

@@ -5,7 +5,7 @@
 }
 
 .article-wrapper {
-  width: 44em;
+  display: inline-block;
   margin: 0 auto;
 }
 
@@ -36,15 +36,15 @@
 #past h3:after { padding-left: .5em; }
 
 #upcoming article, #past article {
-  width: 19em;
-  float:left;
+  width: 24em;
+  display: inline-block;
   margin: 0 1.5em;
 }
 
 #past article {
   border: 4px solid black;
-  padding: 0.4em 0.4em 1.6em;
-  width: 17.7em;
+  padding: 0.4em 1.5em 1.6em;
+  width: 20.5em;
   margin-bottom: 2.5em;
 }
 
@@ -150,22 +150,10 @@
   margin: 0 auto;
 }
 
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 55em) {
   #upcoming article {
-    float: none;
-    margin: 0 auto 1.5em;
-  }
-
-  #upcoming {
-    background: #313131;
-  }
-
-  .locations-note {
-    padding: 0 10% 1.5em;
-  }
-
-  .article-wrapper {
-    width: 25em;
+    width: 19em;
+    margin: 0 0.5em;
   }
 
   #past article {
@@ -178,13 +166,39 @@
 
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (max-width: 42em) {
   #upcoming article {
-    width: 16em;
+    width: 15.3em;
+    margin: 0 0.35em;
+  }
+
+}
+
+@media screen and (max-width: 35em) {
+  #upcoming article {
+    width: 88%;
+    margin: 1em 0;
+  }
+
+  #upcoming {
+    background: #313131;
+  }
+
+}
+
+@media screen and (max-width: 30em) {
+
+  #upcoming article {
+/*    width: 16em;*/
   }
 
   #past h4 {
     font-size: 0.9em;
+  }
+
+  .locations-note {
+    padding-left:   .55em;
+    padding-right:  .55em;
   }
 }
 
@@ -196,4 +210,7 @@
   #upcoming .location {
     border: none;
   }
-}
+
+  .locations-note {
+    padding-top: 0;
+  }
