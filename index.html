@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/lte-ie7.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -43,7 +42,7 @@
         <h2>Upcoming Meetings</h2>
         <div class="article-wrapper clearfix">
           <article>
-            <h3>03/05/13</h3>
+            <time datetime="2013-03-15 11:00">03/05/13</time>
             <p class="arrow">Meet<br />Here</p>
             <div class="arrow-down"></div> <!-- for CSS arrow -->
             <div class="location">
@@ -57,7 +56,7 @@
             </div>
           </article>
           <article class="clearfix">
-            <h3>03/19/13</h3>
+            <time datetime="2013-03-19 11:00">03/19/13</time>
             <p class="arrow">Meet<br />Here</p>
             <div class="arrow-down"></div> <!-- for CSS arrow -->
             <div class="location">
@@ -78,22 +77,22 @@
         <h2>Past Meetings</h2>
         <div class="article-wrapper clearfix">
           <article>
-            <h3>02/09/13</h3>
+            <time datetime="2013-02-09 11:00">02/09/13</time>
             <h4>Becoming a Software Craftsman</h4>
             <a href="#">View Code</a>
           </article>
           <article>
-            <h3>01/09/13</h3>
+            <time datetime="2013-01-09 11:00">01/09/13</time>
             <h4>First Causes: Open/Closed Principle Violation</h4>
             <a href="#">View Code</a>
           </article>
           <article>
-            <h3>12/09/12</h3>
+            <time datetime="2012-12-09 11:00">12/09/12</time>
             <h4>Conscious Practice: A little poll</h4>
             <a href="#">View Code</a>
           </article>
           <article>
-            <h3>11/09/12</h3>
+            <time datetime="2012-11-09 11:00">11/09/12</time>
             <h4>Inaugural Dayton Clean Coders</h4>
             <a href="#">View Code</a>
           </article>
@@ -126,6 +125,10 @@
           g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
           s.parentNode.insertBefore(g,s)}(document,'script'));
       </script>
+
+      <!--[if lt IE 7]>
+        <script src="js/lte-ie7.js"></script>
+      <![endif]-->
 
     </body>
 </html>

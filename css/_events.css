@@ -18,23 +18,21 @@
   font-weight: 200;
 }
 
-#upcoming h3 {
-  color: #9BC236;
-}
-
-#past h3 {
+#past time {
   font-size: 0.9em;
+  display: block;
+  margin: 0.9em 0;
 }
 
-#past h3:before, #past h3:after {
+#past time:before, #past time:after {
   content: "–";
   font-weight: bold;
   color: #9BC236;
 }
 
-#past h3:before { padding-right: .5em; }
+#past time:before { padding-right: .5em; }
 
-#past h3:after { padding-left: .5em; }
+#past time:after { padding-left: .5em; }
 
 #upcoming article, #past article {
   width: 24em;
@@ -49,16 +47,18 @@
   margin-bottom: 2.5em;
 }
 
-#upcoming article h3 {
+#upcoming time {
+  color: #9BC236;
   font-size: 1.6em;
   letter-spacing: .15em;
-  margin: 0;
+  display: block;
   margin-bottom: .5em;
 }
 
 #upcoming article h4 {
   font-size: 1.9em;
   margin: 0 0 .6em;
+  letter-spacing: .1em;
 }
 
 #upcoming .location {
