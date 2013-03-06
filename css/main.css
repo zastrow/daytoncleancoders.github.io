@@ -212,6 +212,12 @@ body {
     height: 150%;
 }
 
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
