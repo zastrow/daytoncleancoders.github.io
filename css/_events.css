@@ -61,7 +61,7 @@
   letter-spacing: .1em;
 }
 
-#upcoming .location {
+#upcoming .article-block {
   border: 5px solid white;
   padding: 4.5em 0 2em;
 }
@@ -124,7 +124,7 @@
   background-color: #e5e5e5;
 }
 
-.arrow {
+.attention {
   /*background: url(../img/arrow.png) no-repeat center;*/
   background: #9BC236;
   color: black;
@@ -147,7 +147,7 @@
   position: relative;
 }
 
-.locations-note {
+.note {
   font-weight: 200;
   clear: both;
   padding: 1.5em 0;
@@ -223,7 +223,7 @@
     font-size: 0.9em;
   }
 
-  .locations-note {
+  .note {
     padding-left:   .55em;
     padding-right:  .55em;
   }
@@ -234,10 +234,10 @@
     width: auto;
   }
 
-  #upcoming .location {
+  #upcoming .article-block {
     border: none;
   }
 
-  .locations-note {
+  .note {
     padding-top: 0;
   }

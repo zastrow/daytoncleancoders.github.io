@@ -176,7 +176,7 @@ h6 {
     margin: 2.33em 0;
 }
 
-header h1, .wrapper, #upcoming time, #upcoming h2, .arrow, #past time, #past h2 {
+header h1, .header-wrapper, #upcoming time, #upcoming h2, .attention, #past time, #past h2 {
     font-family: 'outage', sans-serif;
 }
 

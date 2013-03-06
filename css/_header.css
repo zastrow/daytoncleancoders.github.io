@@ -7,14 +7,14 @@
   margin-top: -2.5em;
 }
 
-.wrapper {
+.header-wrapper {
   background: white;
   margin-top: 4em;
   margin-bottom: 5.5em;
   padding: 1em 0;
 }
 
-.wrapper h2 {
+.header-wrapper h2 {
   color: #8a8a8a;
   display: inline-block;
   font-size: .7em;
@@ -24,20 +24,20 @@
   padding: 1.5em 0;
 }
 
-.wrapper span.left, .wrapper span.right {
+.header-wrapper span.first-tag, .header-wrapper span.second-tag {
   padding: 1.9em 0 1.9em;
 }
 
-.wrapper span.left {
+.header-wrapper span.first-tag {
   margin-right: 250px;
 }
 
-.wrapper h2:before {
+.header-wrapper h2:before {
   content: "> ";
   color: #9bc236;
 }
 
-.wrapper h2:after {
+.header-wrapper h2:after {
   content: " <";
   color: #9bc236;
 }
@@ -62,20 +62,20 @@ header p {
     margin-bottom: 0em;
   }
 
-  .wrapper {
+  .header-wrapper {
     margin: 1.15em 0 1.25em 0;
     padding: .4em 0;
   }
 
-  .wrapper h2 {
+  .header-wrapper h2 {
     padding: .75em 0;
   }
 
-  .wrapper span.left, .wrapper span.right {
+  .header-wrapper span.first-tag, .header-wrapper span.second-tag {
     border: none;
   }
 
-  .wrapper span.left {
+  .header-wrapper span.first-tag {
     margin: 0;
   }
 
