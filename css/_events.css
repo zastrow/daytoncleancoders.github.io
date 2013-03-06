@@ -10,7 +10,7 @@
   max-width: 60em;
 }
 
-#upcoming h2, #past h2 {
+#upcoming h1, #past h1 {
   text-transform: uppercase;
   font-size: .8em;
   margin: 0;
@@ -55,7 +55,7 @@
   margin-bottom: .5em;
 }
 
-#upcoming article h4 {
+#upcoming h2 {
   font-size: 1.9em;
   margin: 0 0 .6em;
   letter-spacing: .1em;
@@ -98,6 +98,10 @@
 
 #upcoming a:hover {
   background: #929292;
+}
+
+#past h2 {
+  font-size: 1em;
 }
 
 #past a, #past a:visited {
@@ -164,7 +168,7 @@
     width: 15.8em;
   }
 
-  #past h4 {
+  #past h2 {
     min-height: 4em;
   }
 
@@ -184,7 +188,7 @@
     width: 11.7em;
   }
 
-  #past h4 {
+  #past h2 {
     min-height: 6em;
   }
 
@@ -215,7 +219,7 @@
 
 @media screen and (max-width: 30em) {
 
-  #past h4 {
+  #past h2 {
     font-size: 0.9em;
   }
 
