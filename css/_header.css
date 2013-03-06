@@ -29,7 +29,7 @@
 }
 
 .header-wrapper span.first-tag {
-  margin-right: 250px;
+  margin-right: 20em;
 }
 
 .header-wrapper h2:before {
@@ -59,9 +59,6 @@ header p {
   .logo {
     background: url(../img/logo-small.png) no-repeat center;
     position: relative;
-    /*background-position: left;*/
-    /*float: left;*/
-    /*width: 136px;*/
     height: 150px;
     margin-top: 0em;
     margin-bottom: 0em;
