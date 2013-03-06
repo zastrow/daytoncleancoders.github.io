@@ -1,5 +1,5 @@
 #upcoming {
-  background: #313131 url(../img/photo.jpg) no-repeat center;
+  background: #313131;
   color: white;
   margin: 0 auto;
 }
@@ -7,7 +7,8 @@
 .article-wrapper {
   display: inline-block;
   margin: 0 auto;
-  max-width: 60em;
+  max-width: 70em;
+  width: 100%;
 }
 
 #upcoming h1, #past h1 {
@@ -35,15 +36,16 @@
 #past time:after { padding-left: .5em; }
 
 #upcoming article, #past article {
-  width: 24em;
   display: inline-block;
-  margin: 0 1.5em;
+  width: 88%;
+}
+
+#upcoming article {
+  margin: 1em 0;
 }
 
 #past article {
   border: 4px solid black;
-  padding: 0.4em 1.5em 1.6em;
-  width: 20.5em;
   margin-bottom: 2.5em;
 }
 
@@ -62,7 +64,7 @@
 }
 
 #upcoming .article-block {
-  border: 5px solid white;
+  border: none;
   padding: 4.5em 0 2em;
 }
 
@@ -102,17 +104,22 @@
 
 #past h2 {
   font-size: 1em;
+  min-height: 2.9em;
+  padding: 0 1em;
 }
 
 #past a, #past a:visited {
+  display: block;
+  max-width: 8em;
+  margin: 0 auto 1.6em;
   text-decoration: none;
   color: black;
   text-transform: uppercase;
   font-size: 0.8em;
   font-weight: 200;
   letter-spacing: 0.2em;
-  background: white url(../img/button-check.png) no-repeat 18px 10px;
-  padding: 0.6em 1.3em 0.6em 3.6em;
+  background: white url(../img/button-check.png) no-repeat 9px 9px;
+  padding: 0.6em 0.5em 0.5em 3em;
   -o-transition:color .1s ease-out, background .1s ease-in;
   -ms-transition:color .1s ease-out, background .1s ease-in;
   -moz-transition:color .1s ease-out, background .1s ease-in;
@@ -125,7 +132,6 @@
 }
 
 .attention {
-  /*background: url(../img/arrow.png) no-repeat center;*/
   background: #9BC236;
   color: black;
   letter-spacing: .3em;
@@ -150,94 +156,71 @@
 .note {
   font-weight: 200;
   clear: both;
-  padding: 1.5em 0;
+  padding: 0 4% 2.5em;
   max-width: 30em;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 55em) {
-  #upcoming article {
-    width: 19em;
-    margin: 0 0.5em;
+@media screen and (min-width: 17em) {
+  #upcoming .article-block {
+    border: 5px solid white;
   }
 
-  #past article {
-    margin: 0 0.5em;
-    margin-bottom: 1em;
-    min-height: 10.6em;
-    width: 15.8em;
-  }
+}
 
+@media screen and (min-width: 25em) {
   #past h2 {
-    min-height: 4em;
+    min-height: 2em;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  #upcoming {
+    background: #313131 url(../img/photo.jpg) no-repeat center;
+  }
+
+  #upcoming article {
+    width: 42%;
+    margin: 0.2em .5em;
   }
 
   #past {
-    padding-bottom: 1em;
-  }
-
-}
-
-@media screen and (max-width: 42em) {
-  #upcoming article {
-    width: 15.3em;
-    margin: 0 0.35em;
-  }
-
-  #past article {
-    width: 11.7em;
+    padding-bottom: 2em;
   }
 
   #past h2 {
-    min-height: 6em;
-  }
-
-}
-
-@media screen and (max-width: 35em) {
-  #upcoming article {
-    width: 88%;
-    margin: 1em 0;
-  }
-
-  #upcoming {
-    background: #313131;
+    min-height: 4.6em;
   }
 
   #past article {
-    width: 9.4em;
-    margin: 0 0.3em 1em;
-    padding: 0.4em 0.7em 0.9em;
+    margin: 0.7em .5em;
+    width: 42%;
   }
 
   #past a, #past a:visited {
-    padding: 0.6em 0.5em 0.5em 3em;
-    background: white url(../img/button-check.png) no-repeat 9px 9px;
+    background: white url(../img/button-check.png) no-repeat 18px 10px;
+    padding: 0.6em 1.3em 0.6em 3.6em;  
+  }
+
+  .note {
+    padding: 1.2em 4%;
+  }
+}
+
+@media screen and (min-width: 50em) {
+  #past h2 {
+    min-height: 3.7em;
   }
 
 }
 
-@media screen and (max-width: 30em) {
+@media screen and (min-width: 60em) {
+  #past article {
+    width: 19.2%;
+  }
 
   #past h2 {
-    font-size: 0.9em;
+    min-height: 6.2em;
   }
 
-  .note {
-    padding-left:   .55em;
-    padding-right:  .55em;
-  }
 }
-
-@media screen and (max-width: 17em) {
-  #upcoming article {
-    width: auto;
-  }
-
-  #upcoming .article-block {
-    border: none;
-  }
-
-  .note {
-    padding-top: 0;
-  }
