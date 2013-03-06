@@ -39,9 +39,9 @@ footer li {
   height: 4em;
   width: 4em;
   background: black;
-  -webkit-border-radius:  50px;
-  -moz-border-radius:     50px; 
-  border-radius:          50px;
+  -webkit-border-radius:  2em;
+  -moz-border-radius:     2em; 
+  border-radius:          2em;
   margin-left: 0.8em;
 }
 
@@ -53,7 +53,7 @@ footer li {
   text-align: center;
   height: 1.6em;
   width: 1.75em;
-  padding-top: 0.22em;
+  padding-top: 0.32em;
 }
 
 .icon-github:before, .icon-twitter:before {
@@ -66,11 +66,11 @@ footer li {
 }
 
 .icon-github:before {
-  /*content: "\74";*/
+  content: "\74";
 }
 
 .icon-twitter:before {
-  /*content: "\67";*/
+  content: "\67";
 }
 
 .copyright {
