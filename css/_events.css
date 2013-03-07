@@ -243,6 +243,10 @@
     border: 5px solid white;
   }
 
+  #past article {
+    margin-bottom: 2.1em;
+  }
+
   .attention {
     width: 8em;
     padding: 1em 0 0.5em;
