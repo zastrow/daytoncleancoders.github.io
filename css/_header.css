@@ -12,16 +12,17 @@
 }
 
 header {
-  padding-top: 4em;
-  box-shadow: 0px 0px 4px 0px #474747;
+  padding: 4em 0 5.3em;
+  box-shadow: 0px 0px 5px 0px #474747;
+  position: relative;
 }
 
-.header-wrapper {
+.tagline-wrapper {
   background: white;
   padding: 1em 0;
 }
 
-.header-wrapper h2 {
+.tagline-wrapper h2 {
   color: #8a8a8a;
   display: inline-block;
   font-size: .7em;
@@ -31,30 +32,33 @@ header {
   padding: 1.5em 0;
 }
 
-.header-wrapper span.first-tag, .header-wrapper span.second-tag {
+.tagline-wrapper span.first-tag, .tagline-wrapper span.second-tag {
   padding: 1.9em 0 1.9em;
 }
 
-.header-wrapper span.first-tag {
+.tagline-wrapper span.first-tag {
   margin-right: 20em;
 }
 
-.header-wrapper h2:before {
+.tagline-wrapper h2:before {
   content: ">\00a0";
   color: #9bc236;
 }
 
-.header-wrapper h2:after {
+.tagline-wrapper h2:after {
   content: "\00a0<";
   color: #9bc236;
 }
 
-header p {
+.intro {
   background: #8A8A8A;
   border-top: 10px solid #9BC236;
   padding: 1.5em 15%;
   font-size: 1.5em;
-  margin: 3.5em 0 0;
+}
+
+.intro p {
+  margin: 0;
 }
 
 @media screen and (min-width: 80em) {
@@ -65,7 +69,7 @@ header p {
 
 @media screen and (max-width: 50em) {
   header {
-    padding-top: 1.3em;
+    padding: 1.2em 0 1.2em;
   }
 
   .logo {
@@ -76,27 +80,46 @@ header p {
     margin-bottom: 0em;
   }
 
-  .header-wrapper {
-    margin: 1.15em 0 1.25em 0;
+  .tagline-wrapper {
+    margin-top: 1.15em;
     padding: .4em 0;
   }
 
-  .header-wrapper h2 {
+  .tagline-wrapper h2 {
     padding: .75em 0;
   }
 
-  .header-wrapper span.first-tag, .header-wrapper span.second-tag {
+  .tagline-wrapper span.first-tag, .tagline-wrapper span.second-tag {
     border: none;
   }
 
-  .header-wrapper span.first-tag {
+  .tagline-wrapper span.first-tag {
     margin: 0;
   }
 
-  header p {
+  .intro {
     clear: left;
     font-size: 1.3em;
     padding: 1em 10%;
     margin: 0;
+  }
+}
+
+@media screen and (max-width: 18em) {
+  .tagline-wrapper h2 {
+    font-size: .5em;
+    letter-spacing: -0.2em;
+  }
+
+  .intro {
+    font-size: 1.2em;
+  }
+
+  .tagline-wrapper h2:before {
+    display: none;
+  }
+
+  .tagline-wrapper h2:after {
+    display: none;
   }
 }
