@@ -41,6 +41,15 @@ footer li {
   -moz-border-radius:     2em; 
   border-radius:          2em;
   margin-right: 0.2em;
+  -o-transition:color .2s ease-out, background .2s ease-in;
+  -ms-transition:color .2s ease-out, background .2s ease-in;
+  -moz-transition:color .2s ease-out, background .2s ease-in;
+  -webkit-transition:color .2s ease-out, background .2s ease-in;
+  transition:color .2s ease-out, background .2s ease-in;
+}
+
+footer li:hover {
+  background: #141414;
 }
 
 .icon-github, .icon-twitter {
