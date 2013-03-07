@@ -9,7 +9,7 @@ footer {
 }
 
 .footer-wrapper, .copyright small {
-  width: 89%;
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -108,7 +108,7 @@ footer li {
 
 @media screen and (min-width: 50em) {
   .footer-wrapper, .copyright small {
-    width: 87%;
+    width: 85%;
   }
 
   footer p {
@@ -127,7 +127,7 @@ footer li {
 
   .copyright-wrapper {
     margin: 0 auto;
-    width: 87%;
+    width: 85%;
     max-width: 60em;
   }
 

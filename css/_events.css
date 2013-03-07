@@ -24,6 +24,14 @@
   font-weight: 200;
 }
 
+#upcoming time span {
+  display: block;
+  font-size: 0.5em;
+  color: #7A7A7A;
+  font-family: 'avenir', sans-serif;
+  letter-spacing: 0.1em;
+}
+
 #past h1 b {
   background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIKvX7/+B9Hc3NyMjCAOiAGTwBRA1wIANl0XwTXCU78AAAAASUVORK5CYII=) repeat;
   font-weight: 200;
@@ -52,16 +60,18 @@
 
 #upcoming article, #past article {
   display: inline-block;
-  width: 88%;
 }
 
 #upcoming article {
-  margin: 1em 0;
+  margin: 0 0 1.2em;
+  border-bottom: 1px solid white;
+  width: 100%;
 }
 
 #past article {
   border: 4px solid black;
-  margin-bottom: 2.5em;
+  margin-bottom: 0.9em;
+  width: 88%;
 }
 
 #upcoming time {
@@ -70,6 +80,10 @@
   letter-spacing: .15em;
   display: block;
   margin-bottom: .5em;
+}
+
+#upcoming .article-block time {
+  font-size: 1em;
 }
 
 #upcoming h2 {
@@ -151,8 +165,8 @@
   letter-spacing: .3em;
   font-size: .8em;
   margin: 0 auto -2.9em;
-  width: 8em;
-  padding: 1em 0 0.5em;
+  width: 6.6em;
+  padding: 0.7em 0 0.1em;
   position: relative;
   z-index: 1;
 }
@@ -160,13 +174,12 @@
 .arrow-down {
   width: 0; 
   height: 0; 
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-top: 50px solid #9BC236;
-  margin: 1.5em auto -4.2em;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  border-top: 30px solid #9BC236;
+  margin: 1.9em auto -4.2em;
   position: relative;
 }
-
 .note {
   font-weight: 200;
   clear: both;
@@ -220,8 +233,26 @@
 }
 
 @media screen and (min-width: 17em) {
+  #upcoming article {
+    width: 88%;
+    margin: 0.8em 0;
+    border-bottom: none;
+  }
+
   #upcoming .article-block {
     border: 5px solid white;
+  }
+
+  .attention {
+    width: 8em;
+    padding: 1em 0 0.5em;
+  }
+
+  .arrow-down {
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 50px solid #9BC236;
+    margin: 1.5em auto -4.2em;
   }
 
 }
@@ -247,7 +278,7 @@
 
   #upcoming article {
     width: 42%;
-    margin: 0.2em .5em;
+    margin: 0 .5em;
   }
 
   #past {
