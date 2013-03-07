@@ -98,7 +98,7 @@
   text-transform: uppercase;
   text-decoration: none;
   color: black;
-  padding: .5em .75em;
+  padding: 0.6em 1.35em;
   font-size: .8em;
   font-weight: 400;
   -webkit-border-radius:  1px;
@@ -264,7 +264,7 @@
   }
 
   #past a, #past a:visited {
-    background: white url(../img/button-check.png) no-repeat 2.1em 0.8em;
+    background-position: 2.1em 0.8em;
     padding: 0.6em 1.3em 0.6em 3.6em;  
   }
 
