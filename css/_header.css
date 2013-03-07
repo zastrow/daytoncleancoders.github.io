@@ -7,10 +7,17 @@
   margin-top: -2.5em;
 }
 
+.logo h1 {
+  margin: 0;
+}
+
+header {
+  padding-top: 4em;
+  box-shadow: 0px 0px 4px 0px #474747;
+}
+
 .header-wrapper {
   background: white;
-  margin-top: 4em;
-  margin-bottom: 5.5em;
   padding: 1em 0;
 }
 
@@ -33,12 +40,12 @@
 }
 
 .header-wrapper h2:before {
-  content: "> ";
+  content: ">\00a0";
   color: #9bc236;
 }
 
 .header-wrapper h2:after {
-  content: " <";
+  content: "\00a0<";
   color: #9bc236;
 }
 
@@ -47,8 +54,9 @@ header p {
   border-top: 10px solid #9BC236;
   padding: 1.5em 15%;
   font-size: 1.5em;
-  margin: 0;
+  margin: 3.5em 0 0;
 }
+
 @media screen and (min-width: 80em) {
   .intro-linebreak {
     display: block;
@@ -56,6 +64,10 @@ header p {
 }
 
 @media screen and (max-width: 50em) {
+  header {
+    padding-top: 1.3em;
+  }
+
   .logo {
     background: url(../img/logo-small.png) no-repeat center;
     position: relative;
@@ -85,5 +97,6 @@ header p {
     clear: left;
     font-size: 1.3em;
     padding: 1em 10%;
+    margin: 0;
   }
 }

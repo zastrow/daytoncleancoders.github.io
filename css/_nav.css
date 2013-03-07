@@ -1,7 +1,7 @@
 
 nav {
   text-align: center;
-  margin-top: 1.1em;
+  margin-bottom: 1.3em;
 }
 
 nav ul {
@@ -14,7 +14,7 @@ nav ul {
 
 nav li {
   display: inline;
-  padding: 0 2%;
+  padding: 0 1%;
 }
 
 nav a, nav a:visited {
@@ -23,7 +23,7 @@ nav a, nav a:visited {
   -moz-border-radius:     2px; 
   border-radius:          2px;
   color: #8A8A8A;
-  padding: 4px 8px;
+  padding: 0.4em 0.6em;
   text-decoration: none;
   font-size: .85em;
 }
@@ -35,5 +35,12 @@ nav a:hover {
 @media screen and (min-width: 30em) {
   nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 15em) {
+  nav a, nav a:visited {
+    padding: 0.2em 0.4em;
+    font-size: .7em;
   }
 }
