@@ -1,0 +1,70 @@
+/* Document Styles */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-family: 'avenir', sans-serif;
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: center;
+    border-top: 16px solid #8a8a8a;
+}
+
+body, #past h1 b {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQIW2NkAIKvX7/+B9Hc3NyMjCAOiAGTwBRA1wIANl0XwTXCU78AAAAASUVORK5CYII=) repeat;
+}
+
+header h1, .tagline-wrapper, #upcoming time, #upcoming h2, .attention, #past time, #past h2 {
+    font-family: 'outage', sans-serif;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* Chrome Frame Prompt */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Image Replacement */
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+/* Clearfix for floats */
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* Clearfix helpers for IE 6/7 only */
+
+.clearfix {
+    *zoom: 1;
+}

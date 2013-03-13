@@ -190,7 +190,12 @@ dfn {
 hr {
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-    height: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 /**
@@ -326,10 +331,13 @@ nav ol {
 /**
  * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
  * 2. Improve image quality when scaled in IE 7.
+ * 3. Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
 
 img {
     border: 0; /* 1 */
+    vertical-align: middle;
+
     -ms-interpolation-mode: bicubic; /* 2 */
 }
 
@@ -506,11 +514,13 @@ input::-moz-focus-inner {
 /**
  * 1. Remove default vertical scrollbar in IE 6/7/8/9.
  * 2. Improve readability and alignment in all browsers.
+ * 3. Allow only vertical resizing of textareas.
  */
 
 textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
+    resize: vertical; /* 3 */
 }
 
 /* ==========================================================================
