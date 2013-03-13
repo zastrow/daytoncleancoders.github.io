@@ -6,50 +6,44 @@ footer {
   text-align: left;
   font-weight: 300;
   font-size: 1.2em;
+  .footer-attention {
+    color: black;
+    font-weight: normal;
+  }
+  ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  ul {
+    float: left;
+  }
+  li {
+    display: inline-block;
+    height: 4em;
+    width: 4em;
+    background: black;
+    -webkit-border-radius:  2em;
+    -moz-border-radius:     2em; 
+    border-radius:          2em;
+    margin-right: 0.2em;
+    -o-transition:color .2s ease-out, background .2s ease-in;
+    -ms-transition:color .2s ease-out, background .2s ease-in;
+    -moz-transition:color .2s ease-out, background .2s ease-in;
+    -webkit-transition:color .2s ease-out, background .2s ease-in;
+    transition:color .2s ease-out, background .2s ease-in;
+    &:hover {
+      background: #141414;
+    }
+  }
+  p {
+    float: left;
+  }
 }
 
 .footer-wrapper, .copyright small {
   width: 86%;
   margin: 0 auto;
-}
-
-footer .footer-attention {
-  color: black;
-  font-weight: normal;
-}
-
-footer ul, footer ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-footer p {
-  float: left;
-}
-
-footer ul {
-  float: left;
-}
-
-footer li {
-  display: inline-block;
-  height: 4em;
-  width: 4em;
-  background: black;
-  -webkit-border-radius:  2em;
-  -moz-border-radius:     2em; 
-  border-radius:          2em;
-  margin-right: 0.2em;
-  -o-transition:color .2s ease-out, background .2s ease-in;
-  -ms-transition:color .2s ease-out, background .2s ease-in;
-  -moz-transition:color .2s ease-out, background .2s ease-in;
-  -webkit-transition:color .2s ease-out, background .2s ease-in;
-  transition:color .2s ease-out, background .2s ease-in;
-}
-
-footer li:hover {
-  background: #141414;
 }
 
 .icon-github, .icon-twitter {
@@ -61,15 +55,14 @@ footer li:hover {
   height: 1.6em;
   width: 1.75em;
   padding-top: 0.32em;
-}
-
-.icon-github:before, .icon-twitter:before {
-  font-family: 'ddc-social';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
+  &:before {
+    font-family: 'ddc-social';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;    
+  }
 }
 
 .icon-github:before {
@@ -87,10 +80,9 @@ footer li:hover {
   text-align: left;
   text-transform: uppercase;
   letter-spacing: .1em;
-}
-
-.copyright small {
-  display: block;
+  small {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 20em) {
@@ -100,18 +92,18 @@ footer li:hover {
 }
 
 @media screen and (min-width: 40em) {
-  footer p {
-    width: 66%;
-  }
-
-  footer ul {
-    float: right;
-    margin-top: 1.4em;
-  }
-
-  footer li {
-    margin-right: 0;
-    margin-left: 0.8em;
+  footer {
+    p {
+      width: 65%;
+    }
+    ul {
+      float: right;
+      margin-top: 1.4em;
+    }
+    li {
+      margin-right: 0;
+      margin-left: 0.8em;
+    }
   }
 }
 
@@ -120,12 +112,13 @@ footer li:hover {
     width: 85%;
   }
 
-  footer p {
-    width: 70%;
-  }
-
-  footer ul {
-    margin-top: 1em;
+  footer {
+    p {
+      width: 70%;
+    }
+    ul {
+      margin-top: 1em;
+    }
   }
 }
 
@@ -145,11 +138,12 @@ footer li:hover {
     margin: 0;
   }
 
-  footer p {
-    width: 77%;
-  }
-
-  footer ul {
-    margin-top: .4em;
+  footer {
+    p {
+      width: 77%;
+    }
+    ul {
+      margin-top: .4em;
+    }
   }
 }

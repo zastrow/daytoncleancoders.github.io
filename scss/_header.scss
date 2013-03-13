@@ -5,10 +5,9 @@
   position: absolute;
   text-indent: -9999px;
   margin-top: -2.5em;
-}
-
-.logo h1 {
-  margin: 0;
+  h1 {
+    margin: 0;
+  }
 }
 
 header {
@@ -20,45 +19,38 @@ header {
 .tagline-wrapper {
   background: white;
   padding: 1em 0;
-}
-
-.tagline-wrapper h2 {
-  color: #8a8a8a;
-  display: inline-block;
-  font-size: .7em;
-  text-transform: uppercase;
-  border-top: 1px solid #DBDBDB;
-  border-bottom: 1px solid #DBDBDB;
-  padding: 1.5em 0;
-}
-
-.tagline-wrapper span.first-tag, .tagline-wrapper span.second-tag {
-  padding: 1.9em 0 1.9em;
-}
-
-.tagline-wrapper span.first-tag {
-  margin-right: 20em;
-}
-
-.tagline-wrapper h2:before {
-  content: ">\00a0";
-  color: #9bc236;
-}
-
-.tagline-wrapper h2:after {
-  content: "\00a0<";
-  color: #9bc236;
+  h2 {
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    color: #8a8a8a;
+    display: inline-block;
+    font-size: .7em;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+    &:before {
+      content: ">\00a0";
+      color: #9bc236;
+    }
+    &:after {
+      content: "\00a0<";
+      color: #9bc236;
+    }
+  }
+  span {
+    &.first-tag {
+      margin-right: 20em;
+    }
+  }
 }
 
 .intro {
   background: #8A8A8A;
   border-top: 10px solid #9BC236;
-  padding: 1.5em 15%;
   font-size: 1.5em;
-}
-
-.intro p {
-  margin: 0;
+  padding: 1.5em 15%;
+  p {
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 80em) {
@@ -74,52 +66,48 @@ header {
 
   .logo {
     background: url(../img/logo-small.png) no-repeat center;
-    position: relative;
     height: 150px;
     margin-top: 0em;
     margin-bottom: 0em;
+    position: relative;
   }
 
   .tagline-wrapper {
     margin-top: 1.15em;
     padding: .4em 0;
-  }
-
-  .tagline-wrapper h2 {
-    padding: .75em 0;
-  }
-
-  .tagline-wrapper span.first-tag, .tagline-wrapper span.second-tag {
-    border: none;
-  }
-
-  .tagline-wrapper span.first-tag {
-    margin: 0;
+    h2 {
+      padding: .75em 0;
+    }
+    span {
+      &.first-tag, &.second-tag {
+        border: none;
+      }
+      &.first-tag {
+        margin: 0;
+      }
+    }
   }
 
   .intro {
     clear: left;
     font-size: 1.3em;
-    padding: 1em 10%;
     margin: 0;
+    padding: 1em 10%;
   }
 }
 
 @media screen and (max-width: 18em) {
-  .tagline-wrapper h2 {
-    font-size: .5em;
-    letter-spacing: -0.2em;
+  .tagline-wrapper {
+    h2 {
+      font-size: .5em;
+      letter-spacing: -0.2em;
+      &:before, &:after {
+        display: none;
+      }
+    }
   }
 
   .intro {
     font-size: 1em;
-  }
-
-  .tagline-wrapper h2:before {
-    display: none;
-  }
-
-  .tagline-wrapper h2:after {
-    display: none;
   }
 }
