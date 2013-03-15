@@ -5,12 +5,37 @@
     margin: 0;
     padding: 1.4em 0;
     letter-spacing: .1em;
+    @include respond-to(min-width, 13em) {
+      z-index: 2;
+      position: relative;
+      &:before, &:after {
+        width: 50%;
+        content: "\00a0";
+        height: .08em;
+        display: inline-block;
+        vertical-align: middle;
+        position: absolute;
+        z-index: -1;
+        margin-top: .6em;
+      }
+      &:before {
+        left: 0;
+      }
+      &:after {
+        right: 0;
+      }
+      b {
+        padding: 0 0.7em;
+      }
+    }
   }
-}
-
-#upcoming, #past {
   article {
     display: inline-block;
+    @include respond-to(min-width, 17em) {
+      width: 88%;
+      margin: 0.8em 0;
+      border-bottom: none;
+    }
   }
 }
 
@@ -18,18 +43,40 @@
   background: #313131;
   color: white;
   margin: 0 auto;
-  h1 b {
-    background: #313131;
-    @extend %font-light;
+  h1 {
+    b {
+      background: #313131;
+      @extend %font-light;
+      @include respond-to(min-width, 40em) {
+        background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center 0%;
+      }
+    }
+    @include respond-to(min-width, 13em) {
+      &:before, &:after {
+        background: white;
+      }
+    }
   }
   h2 {
     font-size: 1.9em;
     margin: 0 0 .6em;
+    @include respond-to(min-width, 25em) {
+      letter-spacing: .1em;
+    }
   }
   article {
     margin: 0 0 1.2em;
     border-bottom: 1px solid white;
     width: 100%;
+    @include respond-to(min-width, 17em) {
+      width: 88%;
+      margin: 0.8em 0;
+      border-bottom: none;
+    }
+    @include respond-to(min-width, 40em) {
+      width: 42%;
+      margin: 0 .5em;
+    }
   }
   time {
     color: $base;
@@ -56,6 +103,9 @@
       background: $secondary;
     }
   }
+  @include respond-to(min-width, 40em) {
+     background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center;
+  }
 }
 
 .article-block {
@@ -64,6 +114,9 @@
   address {
     margin-bottom: 1em;
     font-style: normal;
+  }
+  @include respond-to(min-width, 17em) {
+    border: 5px solid white;
   }
 }
 
@@ -77,13 +130,32 @@
 #past {
   box-shadow: $shadow;
   position: relative;
-  h1 b {
-    @extend %font-light;
+  h1 {
+    b {
+      @extend %font-light;
+    }
+    @include respond-to(min-width, 13em) {
+      &:before, &:after {
+        background: black;
+      }
+    }
   }
   h2 {
     font-size: 1em;
     min-height: 2.9em;
     padding: 0 1em;
+    @include respond-to(min-width, 25em) {
+      min-height: 2em;
+    }
+    @include respond-to(min-width, 40em) {
+      min-height: 4.6em;
+    }
+    @include respond-to(min-width, 50em) {
+      min-height: 3.7em;
+    }
+    @include respond-to(min-width, 60em) {
+      min-height: 6.2em;
+    }
   }
   time {
     font-size: 0.9em;
@@ -105,6 +177,16 @@
     border: 4px solid black;
     margin-bottom: 0.9em;
     width: 88%;
+    @include respond-to(min-width, 17em) {
+      margin-bottom: 2.1em;
+    }
+    @include respond-to(min-width, 40em) {
+      margin: 0.7em .5em;
+      width: 42%;
+    }
+    @include respond-to(min-width, 60em) {
+      width: 19.2%;
+    }
   }
   a {
     background: white url(../img/button-check.png) no-repeat 1.6em 0.8em;
@@ -126,6 +208,13 @@
     &:hover {
       background-color: lighten($secondary, 40%);;
     }
+    @include respond-to(min-width, 40em) {
+      background-position: 2.1em 0.8em;
+      padding: 0.6em 1.3em 0.6em 3.6em; 
+    }
+  }
+  @include respond-to(min-width, 40em) {
+    padding-bottom: 2em;
   }
 }
 
@@ -145,6 +234,10 @@
   padding: 0.7em 0 0.1em;
   position: relative;
   z-index: 1;
+  @include respond-to(min-width, 17em) {
+    width: 8em;
+    padding: 1em 0 0.5em;
+  }
 }
 
 .arrow-down {
@@ -153,143 +246,19 @@
   height: 0;
   margin: 1.9em auto -4.2em;
   position: relative;
-}
-
-.note {
-  @extend %font-light;
-  clear: both;
-  padding: 0 4% 2.5em;
-  max-width: 30em;
-  margin: 0 auto;
-}
-
-@media (min-width: 13em) {
-  #upcoming, #past {
-    h1 {
-      z-index: 2;
-      position: relative;
-      &:before, &:after {
-        width: 50%;
-        content: "\00a0";
-        height: .08em;
-        display: inline-block;
-        vertical-align: middle;
-        position: absolute;
-        z-index: -1;
-        margin-top: .6em;
-      }
-      &:before {
-        left: 0;
-      }
-      &:after {
-        right: 0;
-      }
-    }
-    h1 b {
-      padding: 0 0.7em;
-    }
-  }
-
-  #upcoming {
-    h1 {
-      &:before, &:after {
-        background: white;
-      }
-    }
-  }
-
-  #past {
-    h1 {
-      &:before, &:after {
-        background: black;
-      }
-    }
-  }
-}
-
-@media (min-width: 17em) {
-  #upcoming {
-    article {
-      width: 88%;
-      margin: 0.8em 0;
-      border-bottom: none;
-    }
-    .article-block {
-      border: 5px solid white;
-    }
-  }
-
-  #past article {
-    margin-bottom: 2.1em;
-  }
-
-  .attention {
-    width: 8em;
-    padding: 1em 0 0.5em;
-  }
-
-  .arrow-down {
+  @include respond-to(min-width, 17em) {
     @include arrow-border(70px, 50px);
     margin: 1.5em auto -4.2em;
   }
 }
 
-@media (min-width: 25em) {
-  h2 {
-    #past & {
-      min-height: 2em;
-    }
-    #upcoming & {
-      letter-spacing: .1em;
-    }
-  }
-}
-
-@media (min-width: 40em) {
-  #upcoming {
-    background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center;
-    h1 b {
-      background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center 0%;
-    }
-    article {
-      width: 42%;
-      margin: 0 .5em;
-    }
-  }
-
-  #past {
-    padding-bottom: 2em;
-    h2 {
-      min-height: 4.6em;
-    }
-    article {
-      margin: 0.7em .5em;
-      width: 42%;
-    }
-    a {
-      background-position: 2.1em 0.8em;
-      padding: 0.6em 1.3em 0.6em 3.6em; 
-    }
-  }
-
-  .note {
+.note {
+  @extend %font-light;
+  clear: both;
+  padding: 1em 4% 2em;
+  max-width: 30em;
+  margin: 0 auto;
+  @include respond-to(min-width, 40em) {
     padding: 1.2em 4%;
-  }
-}
-
-@media (min-width: 50em) {
-  #past h2 {
-    min-height: 3.7em;
-  }
-}
-
-@media (min-width: 60em) {
-  #past {
-    article {
-      width: 19.2%;
-    }
-    h2 {
-      min-height: 6.2em;
-    }
   }
 }

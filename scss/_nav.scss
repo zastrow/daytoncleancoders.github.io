@@ -18,18 +18,12 @@ nav {
     &:hover {
       background: #e8e8e8;
     }
+    @include respond-to(max-width, 15em) {
+      padding: 0.2em 0.4em;
+      font-size: .7em;
+    }
   }
-}
-
-@media (min-width: 30em) {
-  nav {
+  @include respond-to(min-width, 30em) {
     display: none;
-  }
-}
-
-@media (max-width: 15em) {
-  nav a, nav a:visited {
-    padding: 0.2em 0.4em;
-    font-size: .7em;
   }
 }

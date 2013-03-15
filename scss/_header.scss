@@ -10,12 +10,21 @@ $border-thin: 1px solid #DBDBDB;
   h1 {
     margin: 0;
   }
+  @include respond-to(max-width, 50em) {
+    background: url(../img/logo-small.png) no-repeat center;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+  }
 }
 
 header {
   padding: 4em 0 5.3em;
   box-shadow: $shadow;
   position: relative;
+  @include respond-to(max-width, 50em) {
+    padding: 1.2em 0 1.2em;
+  }
 }
 
 .tagline-wrapper {
@@ -43,38 +52,7 @@ header {
       margin-right: 20em;
     }
   }
-}
-
-.intro {
-  background: $secondary;
-  border-top: 10px solid $base;
-  font-size: 1.5em;
-  padding: 1.5em 15%;
-  p {
-    margin: 0;
-  }
-}
-
-@media (min-width: 80em) {
-  .intro-linebreak {
-    display: block;
-  }
-}
-
-@media (max-width: 50em) {
-  header {
-    padding: 1.2em 0 1.2em;
-  }
-
-  .logo {
-    background: url(../img/logo-small.png) no-repeat center;
-    height: 150px;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    position: relative;
-  }
-
-  .tagline-wrapper {
+  @include respond-to(max-width, 50em) {
     margin-top: 1.15em;
     padding: .4em 0;
     h2 {
@@ -89,17 +67,7 @@ header {
       }
     }
   }
-
-  .intro {
-    clear: left;
-    font-size: 1.3em;
-    margin: 0;
-    padding: 1em 10%;
-  }
-}
-
-@media (max-width: 18em) {
-  .tagline-wrapper {
+  @include respond-to(max-width, 18em) {
     h2 {
       font-size: .5em;
       letter-spacing: -0.2em;
@@ -108,8 +76,29 @@ header {
       }
     }
   }
+}
 
-  .intro {
+.intro {
+  background: $secondary;
+  border-top: 10px solid $base;
+  font-size: 1.5em;
+  padding: 1.5em 15%;
+  p {
+    margin: 0;
+  }
+  @include respond-to(max-width, 50em) {
+    clear: left;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 1em 10%;
+  }
+  @include respond-to(max-width, 18em) {
     font-size: 1em;
+  }
+}
+
+@media (min-width: 80em) {
+  .intro-linebreak {
+    display: block;
   }
 }
