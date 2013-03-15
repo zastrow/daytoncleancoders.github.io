@@ -20,7 +20,7 @@
   margin: 0 auto;
   h1 b {
     background: #313131;
-    font-weight: 200;
+    @extend %font-light;
   }
   h2 {
     font-size: 1.9em;
@@ -32,14 +32,14 @@
     width: 100%;
   }
   time {
-    color: #9BC236;
+    color: $base;
     font-size: 1em;
     letter-spacing: .15em;
     display: block;
     margin-bottom: .5em;
   }
   a {
-    background: #B3B3B3;
+    background: lighten($secondary, 10%);
     color: black;
     font: {
       size: .8em;
@@ -51,13 +51,9 @@
       transform: uppercase;
       decoration: none;
     }
-    -o-transition:        color .1s ease-out, background .1s ease-in;
-    -ms-transition:       color .1s ease-out, background .1s ease-in;
-    -moz-transition:      color .1s ease-out, background .1s ease-in;
-    -webkit-transition:   color .1s ease-out, background .1s ease-in;
-    transition:           color .1s ease-out, background .1s ease-in;
+    @include transition;
     &:hover {
-      background: #929292;
+      background: $secondary;
     }
   }
 }
@@ -79,10 +75,10 @@
 }
 
 #past {
-  box-shadow: 0px 0px 5px 0px #474747;
+  box-shadow: $shadow;
   position: relative;
   h1 b {
-    font-weight: 200;
+    @extend %font-light;
   }
   h2 {
     font-size: 1em;
@@ -96,7 +92,7 @@
     &:before, &:after {
       content: "–";
       font-weight: bold;
-      color: #9BC236;
+      color: $base;
     }
     &:before {
       padding-right: .5em;
@@ -126,13 +122,9 @@
       transform: uppercase;
       decoration: none;
     }
-    -o-transition:      color .1s ease-out, background .1s ease-in;
-    -ms-transition:     color .1s ease-out, background .1s ease-in;
-    -moz-transition:    color .1s ease-out, background .1s ease-in;
-    -webkit-transition: color .1s ease-out, background .1s ease-in;
-    transition:         color .1s ease-out, background .1s ease-in;
+    @include transition(.1s);
     &:hover {
-      background-color: #e5e5e5;
+      background-color: lighten($secondary, 40%);;
     }
   }
 }
@@ -144,7 +136,7 @@
 }
 
 .attention {
-  background: #9BC236;
+  background: $base;
   color: black;
   letter-spacing: .3em;
   font-size: .8em;
@@ -156,24 +148,22 @@
 }
 
 .arrow-down {
+  @include arrow-border(60px, 30px);
   width: 0; 
-  height: 0; 
-  border-left: 60px solid transparent;
-  border-right: 60px solid transparent;
-  border-top: 30px solid #9BC236;
+  height: 0;
   margin: 1.9em auto -4.2em;
   position: relative;
 }
 
 .note {
-  font-weight: 200;
+  @extend %font-light;
   clear: both;
   padding: 0 4% 2.5em;
   max-width: 30em;
   margin: 0 auto;
 }
 
-@media screen and (min-width: 13em) {
+@media (min-width: 13em) {
   #upcoming, #past {
     h1 {
       z-index: 2;
@@ -217,7 +207,7 @@
   }
 }
 
-@media screen and (min-width: 17em) {
+@media (min-width: 17em) {
   #upcoming {
     article {
       width: 88%;
@@ -239,14 +229,12 @@
   }
 
   .arrow-down {
-    border-left: 70px solid transparent;
-    border-right: 70px solid transparent;
-    border-top: 50px solid #9BC236;
+    @include arrow-border(70px, 50px);
     margin: 1.5em auto -4.2em;
   }
 }
 
-@media screen and (min-width: 25em) {
+@media (min-width: 25em) {
   h2 {
     #past & {
       min-height: 2em;
@@ -257,11 +245,11 @@
   }
 }
 
-@media screen and (min-width: 40em) {
+@media (min-width: 40em) {
   #upcoming {
-    background: #313131 url(../img/photo.jpg) no-repeat center;
+    background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center;
     h1 b {
-      background: #313131 url(../img/photo.jpg) no-repeat center -21px;
+      background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center 0%;
     }
     article {
       width: 42%;
@@ -289,13 +277,13 @@
   }
 }
 
-@media screen and (min-width: 50em) {
+@media (min-width: 50em) {
   #past h2 {
     min-height: 3.7em;
   }
 }
 
-@media screen and (min-width: 60em) {
+@media (min-width: 60em) {
   #past {
     article {
       width: 19.2%;

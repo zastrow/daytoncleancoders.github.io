@@ -9,11 +9,13 @@ textarea {
 }
 
 body {
-    font-family: 'avenir', sans-serif;
-    font-size: 1em;
+    font: {
+      family: $font;
+      size: 1em;
+    }
     line-height: 1.4;
     text-align: center;
-    border-top: 16px solid #8a8a8a;
+    border-top: 16px solid $secondary;
 }
 
 body, #past h1 b {
@@ -21,16 +23,16 @@ body, #past h1 b {
 }
 
 header h1, .tagline-wrapper, #upcoming time, #upcoming h2, .attention, #past time, #past h2 {
-    font-family: 'outage', sans-serif;
+    font-family: $title;
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: $base;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: $base;
     text-shadow: none;
 }
 
