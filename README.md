@@ -1,1 +1,1 @@
-This is a simple one-page site for the [Dayton Clean Coders](http://daytoncleancoders.com/) meetup, including a [style prototype](https://github.com/neilrenicker/dayton-clean-coders/blob/master/style-prototype/index.html) based on the [Style Tiles](http://styletil.es/) method of prototyping.
+This is a simple one-page site for the [Dayton Clean Coders](http://daytoncleancoders.com/) meetup.
