@@ -48,7 +48,7 @@
       background: #313131;
       @extend %font-light;
       @include respond-to(min-width, 40em) {
-        background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center 0%;
+        background: darken($secondary, 35%) image-url("photo.jpg") no-repeat center 0%;
       }
     }
     @include respond-to(min-width, 13em) {
@@ -104,7 +104,7 @@
     }
   }
   @include respond-to(min-width, 40em) {
-     background: darken($secondary, 35%) url(../img/photo.jpg) no-repeat center;
+     background: darken($secondary, 35%) image-url("photo.jpg") no-repeat center;
   }
 }
 
@@ -189,7 +189,7 @@
     }
   }
   a {
-    background: white url(../img/button-check.png) no-repeat 1.6em 0.8em;
+    background: white image-url("button-check.png") no-repeat 1.6em 0.8em;
     color: black;
     display: block;
     font: {

@@ -1,7 +1,7 @@
 $border-thin: 1px solid #DBDBDB;
 
 .logo {
-  background: url(../img/logo.png) no-repeat center;
+  background: image-url("logo.png") no-repeat center;
   height: 200px;
   width: 100%;
   position: absolute;
@@ -11,7 +11,7 @@ $border-thin: 1px solid #DBDBDB;
     margin: 0;
   }
   @include respond-to(max-width, 50em) {
-    background: url(../img/logo-small.png) no-repeat center;
+    background: image-url("logo-small.png") no-repeat center;
     height: 150px;
     margin: 0 auto;
     position: relative;
