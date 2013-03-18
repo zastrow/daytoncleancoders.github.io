@@ -1,17 +1,3 @@
-@mixin transition($ease:.2s) {
-  -o-transition:color       $ease ease-out, background $ease ease-in;
-  -ms-transition:color      $ease ease-out, background $ease ease-in;
-  -moz-transition:color     $ease ease-out, background $ease ease-in;
-  -webkit-transition:color  $ease ease-out, background $ease ease-in;
-  transition:color          $ease ease-out, background $ease ease-in; 
-}
-
-@mixin radius($size:.25em) {
-  -webkit-border-radius:  $size;
-  -moz-border-radius:     $size; 
-  border-radius:          $size;
-}
-
 @mixin arrow-border($lr, $top) {
   border-left: $lr solid transparent;
   border-right: $lr solid transparent;

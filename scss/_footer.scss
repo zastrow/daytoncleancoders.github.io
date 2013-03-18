@@ -15,6 +15,16 @@ footer {
   ul {
     @extend %list-reset;
     float: left;
+    @include respond-to(min-width, 40em) {
+      float: right;
+      margin-top: 1.4em;
+    }
+    @include respond-to(min-width, 50em) {
+      margin-top: 1em;
+    }
+    @include respond-to(min-width, 60em) {
+      margin-top: .4em;
+    }
   }
   li {
     background: black;
@@ -22,20 +32,45 @@ footer {
     height: 4em;
     width: 4em;
     margin-right: 0.2em;
-    @include radius(2em);
-    @include transition;
+    @include border-radius(2em);
+    @include transition(background .2s ease);
     &:hover {
       background: #141414;
+    }
+    @include respond-to(min-width, 20em) {
+      margin-right: .8em;
+    }
+    @include respond-to(min-width, 40em) {
+      margin-right: 0;
+      margin-left: 0.8em;
     }
   }
   p {
     float: left;
+    @include respond-to(min-width, 40em) {
+      width: 65%;
+    }
+    @include respond-to(min-width, 50em) {
+      width: 70%;
+    }
+    @include respond-to(min-width, 60em) {
+      width: 76%;
+    }
   }
 }
 
 .footer-wrapper, .copyright small {
   width: 86%;
   margin: 0 auto;
+  @include respond-to(min-width, 50em) {
+    width: 85%;
+  }
+}
+
+.footer-wrapper {
+  @include respond-to(min-width, 60em) {
+    max-width: 50em;
+  }
 }
 
 .icon-github, .icon-twitter {
@@ -78,68 +113,16 @@ footer {
   letter-spacing: .1em;
   small {
     display: block;
-  }
-}
-
-@media (min-width: 20em) {
-  footer li {
-    margin-right: .8em;
-  }
-}
-
-@media (min-width: 40em) {
-  footer {
-    p {
-      width: 65%;
-    }
-    ul {
-      float: right;
-      margin-top: 1.4em;
-    }
-    li {
-      margin-right: 0;
-      margin-left: 0.8em;
+    @include respond-to(min-width, 60em) {
+      width: auto;
+      margin: 0;
     }
   }
-}
-
-@media (min-width: 50em) {
-  .footer-wrapper, .copyright small {
-    width: 85%;
-  }
-
-  footer {
-    p {
-      width: 70%;
-    }
-    ul {
-      margin-top: 1em;
-    }
-  }
-}
-
-@media (min-width: 60em) {
-  .footer-wrapper {
-    max-width: 50em;
-  }
-
   .copyright-wrapper {
-    margin: 0 auto;
-    width: 85%;
-    max-width: 60em;
-  }
-
-  .copyright small {
-    width: auto;
-    margin: 0;
-  }
-
-  footer {
-    p {
-      width: 76%;
-    }
-    ul {
-      margin-top: .4em;
+    @include respond-to(min-width, 60em) {
+      margin: 0 auto;
+      width: 85%;
+      max-width: 60em;
     }
   }
 }

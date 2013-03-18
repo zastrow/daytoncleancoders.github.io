@@ -691,6 +691,8 @@ nav a {
   background: #F0F0F0;
   -webkit-border-radius: 0.25em;
   -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
   border-radius: 0.25em;
   color: #8a8a8a;
   padding: 0.4em 0.6em;
@@ -967,11 +969,10 @@ header {
   padding: 0.6em 1.35em;
   text-transform: uppercase;
   text-decoration: none;
-  -o-transition: color 0.2s ease-out, background 0.2s ease-in;
-  -ms-transition: color 0.2s ease-out, background 0.2s ease-in;
-  -moz-transition: color 0.2s ease-out, background 0.2s ease-in;
-  -webkit-transition: color 0.2s ease-out, background 0.2s ease-in;
-  transition: color 0.2s ease-out, background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_events\.scss}line{font-family:\00003102}}
 #upcoming a:hover {
@@ -1108,11 +1109,10 @@ header {
   padding: 0.6em 0.5em 0.5em 3em;
   text-transform: uppercase;
   text-decoration: none;
-  -o-transition: color 0.1s ease-out, background 0.1s ease-in;
-  -ms-transition: color 0.1s ease-out, background 0.1s ease-in;
-  -moz-transition: color 0.1s ease-out, background 0.1s ease-in;
-  -webkit-transition: color 0.1s ease-out, background 0.1s ease-in;
-  transition: color 0.1s ease-out, background 0.1s ease-in;
+  -webkit-transition: background 0.3s ease;
+  -moz-transition: background 0.3s ease;
+  -o-transition: background 0.3s ease;
+  transition: background 0.3s ease;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_events\.scss}line{font-family:\00003208}}
 #past a:hover {
@@ -1212,7 +1212,26 @@ footer .footer-attention {
 footer ul {
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000319}}
+@media (min-width: 40em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000315}}
+  footer ul {
+    float: right;
+    margin-top: 1.4em;
+  }
+}
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000315}}
+  footer ul {
+    margin-top: 1em;
+  }
+}
+@media (min-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000315}}
+  footer ul {
+    margin-top: .4em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000329}}
 footer li {
   background: black;
   display: inline-block;
@@ -1221,29 +1240,74 @@ footer li {
   margin-right: 0.2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
   border-radius: 2em;
-  -o-transition: color 0.2s ease-out, background 0.2s ease-in;
-  -ms-transition: color 0.2s ease-out, background 0.2s ease-in;
-  -moz-transition: color 0.2s ease-out, background 0.2s ease-in;
-  -webkit-transition: color 0.2s ease-out, background 0.2s ease-in;
-  transition: color 0.2s ease-out, background 0.2s ease-in;
+  -webkit-transition: background 0.2s ease;
+  -moz-transition: background 0.2s ease;
+  -o-transition: background 0.2s ease;
+  transition: background 0.2s ease;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000337}}
 footer li:hover {
   background: #141414;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000331}}
+@media (min-width: 20em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000329}}
+  footer li {
+    margin-right: .8em;
+  }
+}
+@media (min-width: 40em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000329}}
+  footer li {
+    margin-right: 0;
+    margin-left: 0.8em;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000348}}
 footer p {
   float: left;
 }
+@media (min-width: 40em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000348}}
+  footer p {
+    width: 65%;
+  }
+}
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000348}}
+  footer p {
+    width: 70%;
+  }
+}
+@media (min-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000348}}
+  footer p {
+    width: 76%;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000362}}
 .footer-wrapper, .copyright small {
   width: 86%;
   margin: 0 auto;
 }
+@media (min-width: 50em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000362}}
+  .footer-wrapper, .copyright small {
+    width: 85%;
+  }
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000341}}
+@media (min-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000370}}
+  .footer-wrapper {
+    max-width: 50em;
+  }
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000376}}
 .icon-github, .icon-twitter {
   color: #9bc236;
   font-size: 2.3em;
@@ -1254,7 +1318,7 @@ footer p {
   width: 1.75em;
   padding-top: 0.32em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000350}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000385}}
 .icon-github:before, .icon-twitter:before {
   font-family: "ddc-social";
   font-style: normal;
@@ -1264,17 +1328,17 @@ footer p {
   -webkit-font-smoothing: antialiased;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000397}}
 .icon-github:before {
   content: "\74";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003101}}
 .icon-twitter:before {
   content: "\67";
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003105}}
 .copyright {
   background: black;
   color: #8a8a8a;
@@ -1283,73 +1347,22 @@ footer p {
   text-transform: uppercase;
   letter-spacing: .1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003114}}
 .copyright small {
   display: block;
 }
-
-@media (min-width: 20em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000385}}
-  footer li {
-    margin-right: .8em;
-  }
-}
-@media (min-width: 40em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000392}}
-  footer p {
-    width: 65%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000395}}
-  footer ul {
-    float: right;
-    margin-top: 1.4em;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\0000399}}
-  footer li {
-    margin-right: 0;
-    margin-left: 0.8em;
-  }
-}
-@media (min-width: 50em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003107}}
-  .footer-wrapper, .copyright small {
-    width: 85%;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003112}}
-  footer p {
-    width: 70%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003115}}
-  footer ul {
-    margin-top: 1em;
-  }
-}
 @media (min-width: 60em) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003122}}
-  .footer-wrapper {
-    max-width: 50em;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003126}}
-  .copyright-wrapper {
-    margin: 0 auto;
-    width: 85%;
-    max-width: 60em;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003114}}
   .copyright small {
     width: auto;
     margin: 0;
   }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003138}}
-  footer p {
-    width: 76%;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003141}}
-  footer ul {
-    margin-top: .4em;
+}
+@media (min-width: 60em) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/neilrenicker\/Sites\/dcc\/scss\/_footer\.scss}line{font-family:\00003121}}
+  .copyright .copyright-wrapper {
+    margin: 0 auto;
+    width: 85%;
+    max-width: 60em;
   }
 }

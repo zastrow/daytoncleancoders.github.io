@@ -10,7 +10,7 @@ nav {
   }
   a {
     background: #F0F0F0;
-    @include radius;
+    @include border-radius(.25em);
     color: $secondary;
     padding: 0.4em 0.6em;
     text-decoration: none;
