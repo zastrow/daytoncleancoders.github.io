@@ -35,7 +35,7 @@ footer {
     @include border-radius(2em);
     @include transition(background .2s ease);
     &:hover {
-      background: #141414;
+      background: darken($base, 43%);
     }
     @include respond-to(min-width, 20em) {
       margin-right: .8em;
