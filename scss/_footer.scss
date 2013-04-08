@@ -2,7 +2,7 @@ footer {
   background: $base;
   color: white;
   clear: left;
-  padding: 1.2em 0;
+  padding: 1.2em 0 2.2em;
   text-align: left;
   font: {
     weight: 300;
@@ -11,6 +11,7 @@ footer {
   .footer-attention {
     color: black;
     font-weight: normal;
+    text-shadow: none;
   }
   ul {
     @extend %list-reset;
@@ -59,7 +60,11 @@ footer {
   }
 }
 
-.footer-wrapper, .copyright small {
+.footer-primaryText {
+  text-shadow: 1px 1px 1px darken($base, 10%);
+}
+
+.footer-wrapper, .copyright small, .chirp, .arrow-container {
   width: 86%;
   margin: 0 auto;
   @include respond-to(min-width, 50em) {
@@ -124,5 +129,50 @@ footer {
       width: 85%;
       max-width: 60em;
     }
+  }
+}
+
+.tweets {
+  background: darken($base, 7%);
+  color: black;
+  padding: 2.3em 0 2em;
+  text-align: left;
+  a {
+    color: black;
+  }
+  .chirp {
+    margin-top: 1.9em;
+    @include respond-to(min-width, 40em) {
+      margin-top: 0;
+    }
+    @include respond-to(min-width, 60em) {
+      max-width: 60em;
+    }
+  }
+  .chirp p {
+    margin-top: 0;
+  }
+  .meta {
+    font-size: .8em;
+    font-style: italic;
+  }
+}
+
+.arrow-container {
+  @include respond-to(min-width, 60em) {
+    max-width: 60em;
+  }
+}
+
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 2em solid transparent;
+  border-right: 2em solid transparent;
+  border-bottom: 1.4em solid darken($base, 7%);
+  margin-top: -3.5em;
+  @include respond-to(min-width, 40em) {
+    float: right;
+    margin-right: 6.7em;
   }
 }
