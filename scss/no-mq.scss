@@ -1,7 +1,10 @@
-@import 'variables';
+$breakpoint-no-queries: true;
+$breakpoint-no-query-wrappers: true;
+
 @import 'compass';
 @import 'breakpoint';
 @import 'colors';
+@import 'variables';
 @import 'mixins';
 @import 'extends';
 @import 'fonts';

@@ -11,7 +11,5 @@ $(window).load(function() {
 
   resizer(); // set initially
 
-  $(window).on('resize', resizer); // adjust on browser resize
-
-
+  $(window).on('resize', $.throttle( 100, resizer )); // adjust on browser resize
 });

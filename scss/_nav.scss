@@ -12,18 +12,18 @@ nav {
     background: #F0F0F0;
     @include border-radius(.25em);
     color: $secondary;
-    padding: 0.4em 0.6em;
+    padding: 0.2em 0.4em;
+    font-size: .7em;
     text-decoration: none;
-    font-size: .85em;
     &:hover {
       background: #e8e8e8;
     }
-    @include respond-to(max-width, 15em) {
-      padding: 0.2em 0.4em;
-      font-size: .7em;
+    @include breakpoint(15em, $no-query) {
+      padding: 0.4em 0.6em;
+      font-size: .85em;
     }
   }
-  @include respond-to(min-width, 30em) {
+  @include breakpoint(30em, $no-query) {
     display: none;
   }
 }

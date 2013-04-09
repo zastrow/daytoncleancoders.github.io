@@ -5,7 +5,7 @@
     margin: 0;
     padding: 1.4em 0;
     letter-spacing: .1em;
-    @include respond-to(min-width, 13em) {
+    @include breakpoint(13em, $no-query) {
       z-index: 2;
       position: relative;
       &:before, &:after {
@@ -31,7 +31,7 @@
   }
   article {
     display: inline-block;
-    @include respond-to(min-width, 17em) {
+    @include breakpoint(17em, $no-query) {
       width: 88%;
       margin: 0.8em 0;
       border-bottom: none;
@@ -47,11 +47,11 @@
     b {
       background: #313131;
       @extend %font-light;
-      @include respond-to(min-width, 40em) {
+      @include breakpoint(40em, $no-query) {
         background: darken($secondary, 35%) image-url("photo.jpg") no-repeat center 0%;
       }
     }
-    @include respond-to(min-width, 13em) {
+    @include breakpoint(13em, $no-query) {
       &:before, &:after {
         background: white;
       }
@@ -60,12 +60,12 @@
   h2 {
     font-size: 1.9em;
     margin: 0 0 .6em;
-    @include respond-to(min-width, 28em) {
+    @include breakpoint(28em, $no-query) {
       letter-spacing: .2em;
       font-size: 2.4em;
       margin: 0 0 0.3em;
     }
-    @include respond-to(min-width, 40em) {
+    @include breakpoint(40em, $no-query) {
       letter-spacing: .1em;
       font-size: 1.9em;
     }
@@ -74,12 +74,12 @@
     margin: 0 0 1.2em;
     border-bottom: 1px solid white;
     width: 100%;
-    @include respond-to(min-width, 17em) {
+    @include breakpoint(17em, $no-query) {
       width: 88%;
       margin: 0.8em 0;
       border-bottom: none;
     }
-    @include respond-to(min-width, 40em) {
+    @include breakpoint(40em, $no-query) {
       width: 42%;
       margin: 0 .5em;
     }
@@ -109,7 +109,7 @@
       background: $secondary;
     }
   }
-  @include respond-to(min-width, 40em) {
+  @include breakpoint(40em, $no-query) {
      background: darken($secondary, 35%) image-url("photo.jpg") no-repeat center;
   }
 }
@@ -121,7 +121,7 @@
     margin-bottom: 1em;
     font-style: normal;
   }
-  @include respond-to(min-width, 17em) {
+  @include breakpoint(17em, $no-query) {
     border: 5px solid white;
   }
 }
@@ -140,7 +140,7 @@
     b {
       @extend %font-light;
     }
-    @include respond-to(min-width, 13em) {
+    @include breakpoint(13em, $no-query) {
       &:before, &:after {
         background: black;
       }
@@ -169,14 +169,14 @@
     border: 4px solid black;
     margin-bottom: 0.9em;
     width: 88%;
-    @include respond-to(min-width, 17em) {
+    @include breakpoint(17em, $no-query) {
       margin-bottom: 2.1em;
     }
-    @include respond-to(min-width, 40em) {
+    @include breakpoint(40em, $no-query) {
       margin: 0.7em .5em;
       width: 42%;
     }
-    @include respond-to(min-width, 60em) {
+    @include breakpoint(60em, $no-query) {
       width: 19.2%;
     }
   }
@@ -202,12 +202,12 @@
     &:hover {
       @include box-shadow(1px 1px 0 #c6c6c6);
     }
-    @include respond-to(min-width, 40em) {
+    @include breakpoint(40em, $no-query) {
       background-position: 2.1em 0.8em;
       padding: 0.6em 1.3em 0.6em 3.6em; 
     }
   }
-  @include respond-to(min-width, 40em) {
+  @include breakpoint(40em, $no-query) {
     padding-bottom: 2em;
   }
 }
@@ -234,7 +234,7 @@
   padding: 0.7em 0 0.1em;
   position: relative;
   z-index: 1;
-  @include respond-to(min-width, 17em) {
+  @include breakpoint(17em, $no-query) {
     width: 8em;
     padding: 1em 0 0.5em;
   }
@@ -246,7 +246,7 @@
   height: 0;
   margin: 1.9em auto -4.2em;
   position: relative;
-  @include respond-to(min-width, 17em) {
+  @include breakpoint(17em, $no-query) {
     @include arrow-border(70px, 50px);
     margin: 1.5em auto -4.2em;
   }
@@ -258,7 +258,7 @@
   padding: 1em 4% 2em;
   max-width: 30em;
   margin: 0 auto;
-  @include respond-to(min-width, 40em) {
+  @include breakpoint(40em, $no-query) {
     padding: 1.2em 4%;
   }
 }

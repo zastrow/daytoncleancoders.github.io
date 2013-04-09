@@ -1,78 +1,70 @@
 $border-thin: 1px solid #DBDBDB;
 
 .logo {
-  background: image-url("logo.png") no-repeat center;
-  height: 200px;
+  background: image-url("logo-small.png") no-repeat center;
+  height: 150px;
+  margin: 0 auto;
+  position: relative;
   width: 100%;
-  position: absolute;
   text-indent: -9999px;
-  margin-top: -2.5em;
   h1 {
     margin: 0;
   }
-  @include respond-to(max-width, 50em) {
-    background: image-url("logo-small.png") no-repeat center;
-    height: 150px;
-    margin: 0 auto;
-    position: relative;
+  @include breakpoint(50em, $no-query) {
+    background: image-url("logo.png") no-repeat center;
+    height: 200px;
+    margin-top: -2.5em;
+    position: absolute;
   }
 }
 
 header {
-  padding: 4em 0 5.3em;
+  padding: 1.2em 0 1.2em;
   box-shadow: $shadow;
   position: relative;
-  @include respond-to(max-width, 50em) {
-    padding: 1.2em 0 1.2em;
+  @include breakpoint(50em, $no-query) {
+    padding: 4em 0 6.9em;
   }
 }
 
 .tagline-wrapper {
   background: white;
-  padding: 1em 0;
+  margin-top: 1.15em;
+  padding: .4em 0;
   h2 {
     border-top:     $border-thin;
     border-bottom:  $border-thin;
     color: $secondary;
     display: inline-block;
-    font-size: .7em;
+    font-size: .5em;
     padding: 1.5em 0;
+    letter-spacing: -0.2em;
     text-transform: uppercase;
-    &:before {
-      content: ">\00a0";
-      color: $base;
-    }
-    &:after {
-      content: "\00a0<";
-      color: $base;
-    }
+    &:before, &:after {
+        display: none;
+      }
   }
-  span {
-    &.first-tag {
-      margin-right: 20em;
-    }
-  }
-  @include respond-to(max-width, 50em) {
-    margin-top: 1.15em;
-    padding: .4em 0;
+  @include breakpoint(18em, $no-query) {
     h2 {
       padding: .75em 0;
-    }
-    span {
-      &.first-tag, &.second-tag {
-        border: none;
+      font-size: .7em;
+      letter-spacing: normal;
+      &:before {
+        display: inline;
+        content: ">\00a0";
+        color: $base;
       }
-      &.first-tag {
-        margin: 0;
+      &:after {
+        display: inline;
+        content: "\00a0<";
+        color: $base;
       }
     }
   }
-  @include respond-to(max-width, 18em) {
-    h2 {
-      font-size: .5em;
-      letter-spacing: -0.2em;
-      &:before, &:after {
-        display: none;
+  @include breakpoint(50em, $no-query) {
+    span {
+      &.first-tag {
+        margin-right: 20em;
       }
     }
   }
@@ -81,19 +73,21 @@ header {
 .intro {
   background: $secondary;
   border-top: 10px solid $base;
-  font-size: 1.5em;
-  padding: 1.5em 15%;
+  font-size: 1em;
+  padding: 1em 10%;
+  margin: 0;
   p {
     margin: 0;
   }
-  @include respond-to(max-width, 50em) {
-    clear: left;
+  @include breakpoint(18em, $no-query) {
     font-size: 1.3em;
-    margin: 0;
-    padding: 1em 10%;
+    margin: auto;
   }
-  @include respond-to(max-width, 18em) {
-    font-size: 1em;
+  @include breakpoint(30em, $no-query) {
+    padding: 1.5em 15%;
+  }
+  @include breakpoint(50em, $no-query) {
+    font-size: 1.5em;
   }
 }
 

@@ -3,9 +3,3 @@
   border-right: $lr solid transparent;
   border-top: $top solid $base;
 }
-
-@mixin respond-to($val, $query) {
-  @media ($val: $query) {
-    @content
-  }
-}
