@@ -3,6 +3,10 @@ $border-thin: 1px solid #DBDBDB;
 .logo {
   margin: 0 auto;
   position: relative;
+  @include breakpoint(50em, $no-query) {
+    height: 200px;
+    width: 181px;
+  }
   img {
     max-width: 9em;
     @include breakpoint(30em, $no-query) {
@@ -12,10 +16,6 @@ $border-thin: 1px solid #DBDBDB;
       position: absolute;
       left: 0;
     }
-  }
-  @include breakpoint(50em, $no-query) {
-    height: 200px;
-    width: 181px;
   }
 }
 
@@ -98,5 +98,37 @@ header {
 @media (min-width: 80em) {
   .intro-linebreak {
     display: block;
+  }
+}
+
+.dang-son {
+  display: none;
+  border: 4px solid darken($secondary, 20%);
+  position: absolute;
+  color: darken($secondary, 25%);
+  background: lighten($secondary, 20%);
+  width: 15em;
+  padding: 1em;
+  font-size: .9em;
+  margin-left: 3.7em;
+  @include transition(all .5s ease);
+  @include box-shadow(1px 1px 2px $secondary);
+  @include breakpoint(118em) {
+    display: block;
+  }
+  a, a:hover, a:visited {
+    color: darken($secondary, 25%);
+  }
+}
+
+.dang-son:before {
+  display: none;
+  content: image-url("big-screen-arrow.png") no-repeat center;
+  position: absolute;
+  margin-left: -11.7em;
+  margin-top: 1.2em;
+  @include transition(all .3s ease);
+  @include breakpoint(118em) {
+    display: inline;
   }
 }
