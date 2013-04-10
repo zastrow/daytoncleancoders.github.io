@@ -78,6 +78,7 @@ footer {
   }
 }
 
+// icon font styles
 .icon-github, .icon-twitter {
   color: $base;
   font-size: 2.3em;
@@ -87,25 +88,19 @@ footer {
   height: 1.6em;
   width: 1.75em;
   padding-top: 0.32em;
-  &:before {
-    font: {
-      family: $social;
-      style: normal;
-      weight: normal;
-    }
-    speak: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;    
-  }
 }
 
-.icon-github:before {
-  content: "\74";
+[data-icon]:before {
+  font-family: 'ddc-social';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
-
-.icon-twitter:before {
-  content: "\67";
-}
+// end icon font styles
 
 .copyright {
   background: black;
@@ -133,6 +128,7 @@ footer {
 }
 
 .tweets {
+  display: none;
   background: darken($base, 7%);
   color: black;
   padding: 2.3em 0 2em;

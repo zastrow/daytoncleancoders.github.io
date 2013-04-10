@@ -1,4 +1,6 @@
 $(window).load(function() {
+  $('.tweets').css('display', 'block');
+
   var resizer = function () {
     var tallest_h2 = 0;
     $('.article-title h2').each(function () {

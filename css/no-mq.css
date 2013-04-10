@@ -898,7 +898,7 @@ footer p {
   max-width: 50em;
 }
 
-/* line 81, ../scss/_footer.scss */
+/* line 82, ../scss/_footer.scss */
 .icon-github, .icon-twitter {
   color: #9bc236;
   font-size: 2.3em;
@@ -909,27 +909,20 @@ footer p {
   width: 1.75em;
   padding-top: 0.32em;
 }
-/* line 90, ../scss/_footer.scss */
-.icon-github:before, .icon-twitter:before {
-  font-family: "ddc-social";
-  font-style: normal;
-  font-weight: normal;
+
+/* line 93, ../scss/_footer.scss */
+[data-icon]:before {
+  font-family: 'ddc-social';
+  content: attr(data-icon);
   speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 102, ../scss/_footer.scss */
-.icon-github:before {
-  content: "\74";
-}
-
-/* line 106, ../scss/_footer.scss */
-.icon-twitter:before {
-  content: "\67";
-}
-
-/* line 110, ../scss/_footer.scss */
+/* line 105, ../scss/_footer.scss */
 .copyright {
   background: black;
   color: #8a8a8a;
@@ -938,7 +931,7 @@ footer p {
   text-transform: uppercase;
   letter-spacing: .1em;
 }
-/* line 119, ../scss/_footer.scss */
+/* line 114, ../scss/_footer.scss */
 .copyright small {
   display: block;
 }
@@ -954,8 +947,9 @@ footer p {
   max-width: 60em;
 }
 
-/* line 135, ../scss/_footer.scss */
+/* line 130, ../scss/_footer.scss */
 .tweets {
+  display: none;
   background: #85a62e;
   color: black;
   padding: 2.3em 0 2em;
@@ -965,7 +959,7 @@ footer p {
 .no-mq .tweets {
   padding-top: 0.5em;
 }
-/* line 143, ../scss/_footer.scss */
+/* line 139, ../scss/_footer.scss */
 .tweets a {
   color: black;
 }
@@ -977,7 +971,7 @@ footer p {
 .no-mq .tweets .chirp {
   max-width: 60em;
 }
-/* line 154, ../scss/_footer.scss */
+/* line 150, ../scss/_footer.scss */
 .tweets .chirp p {
   margin-top: 1.9em;
   margin-bottom: .5em;
@@ -995,7 +989,7 @@ footer p {
 .no-mq .tweets .tweet-container:first-of-type {
   margin-right: 6%;
 }
-/* line 172, ../scss/_footer.scss */
+/* line 168, ../scss/_footer.scss */
 .tweets .meta {
   font-size: .8em;
   font-style: italic;
@@ -1006,7 +1000,7 @@ footer p {
   max-width: 60em;
 }
 
-/* line 184, ../scss/_footer.scss */
+/* line 180, ../scss/_footer.scss */
 .arrow-up {
   width: 0;
   height: 0;
