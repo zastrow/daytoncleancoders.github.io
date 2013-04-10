@@ -400,47 +400,60 @@ nav a:hover {
 
 /* line 3, ../scss/_header.scss */
 .logo {
-  background: url('../img/logo-small.png?1362070218') no-repeat center;
-  height: 150px;
   margin: 0 auto;
   position: relative;
-  width: 100%;
-  text-indent: -9999px;
 }
-/* line 10, ../scss/_header.scss */
-.logo h1 {
-  margin: 0;
+/* line 6, ../scss/_header.scss */
+.logo img {
+  max-width: 9em;
+}
+@media (min-width: 30em) {
+  /* line 6, ../scss/_header.scss */
+  .logo img {
+    max-width: none;
+  }
+}
+@media (min-width: 50em) {
+  /* line 6, ../scss/_header.scss */
+  .logo img {
+    position: absolute;
+    left: 0;
+  }
 }
 @media (min-width: 50em) {
   /* line 3, ../scss/_header.scss */
   .logo {
-    background: url('../img/logo.png?1361998742') no-repeat center;
     height: 200px;
-    margin-top: -2.5em;
-    position: absolute;
+    width: 181px;
   }
 }
 
-/* line 21, ../scss/_header.scss */
+/* line 22, ../scss/_header.scss */
 header {
   padding: 1.2em 0 1.2em;
   box-shadow: 0px 0px 5px 0px #474747;
   position: relative;
 }
 @media (min-width: 50em) {
-  /* line 21, ../scss/_header.scss */
+  /* line 22, ../scss/_header.scss */
   header {
-    padding: 4em 0 6.9em;
+    padding: 2em 0 6.9em;
   }
 }
 
-/* line 30, ../scss/_header.scss */
+/* line 31, ../scss/_header.scss */
 .tagline-wrapper {
   background: white;
   margin-top: 1.15em;
   padding: 0.4em 0;
 }
-/* line 34, ../scss/_header.scss */
+@media (min-width: 50em) {
+  /* line 31, ../scss/_header.scss */
+  .tagline-wrapper {
+    margin-top: -9.15em;
+  }
+}
+/* line 38, ../scss/_header.scss */
 .tagline-wrapper h2 {
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
@@ -451,24 +464,24 @@ header {
   letter-spacing: -0.2em;
   text-transform: uppercase;
 }
-/* line 43, ../scss/_header.scss */
+/* line 47, ../scss/_header.scss */
 .tagline-wrapper h2:before, .tagline-wrapper h2:after {
   display: none;
 }
 @media (min-width: 18em) {
-  /* line 48, ../scss/_header.scss */
+  /* line 52, ../scss/_header.scss */
   .tagline-wrapper h2 {
     padding: 0.75em 0;
     font-size: .7em;
     letter-spacing: normal;
   }
-  /* line 52, ../scss/_header.scss */
+  /* line 56, ../scss/_header.scss */
   .tagline-wrapper h2:before {
     display: inline;
     content: ">\00a0";
     color: #9bc236;
   }
-  /* line 57, ../scss/_header.scss */
+  /* line 61, ../scss/_header.scss */
   .tagline-wrapper h2:after {
     display: inline;
     content: "\00a0<";
@@ -476,13 +489,13 @@ header {
   }
 }
 @media (min-width: 50em) {
-  /* line 66, ../scss/_header.scss */
+  /* line 70, ../scss/_header.scss */
   .tagline-wrapper span.first-tag {
     margin-right: 20em;
   }
 }
 
-/* line 73, ../scss/_header.scss */
+/* line 77, ../scss/_header.scss */
 .intro {
   background: #8a8a8a;
   border-top: 10px solid #9bc236;
@@ -490,32 +503,32 @@ header {
   padding: 1em 10%;
   margin: 0;
 }
-/* line 79, ../scss/_header.scss */
+/* line 83, ../scss/_header.scss */
 .intro p {
   margin: 0;
 }
 @media (min-width: 18em) {
-  /* line 73, ../scss/_header.scss */
+  /* line 77, ../scss/_header.scss */
   .intro {
     font-size: 1.3em;
     margin: auto;
   }
 }
 @media (min-width: 30em) {
-  /* line 73, ../scss/_header.scss */
+  /* line 77, ../scss/_header.scss */
   .intro {
     padding: 1.5em 15%;
   }
 }
 @media (min-width: 50em) {
-  /* line 73, ../scss/_header.scss */
+  /* line 77, ../scss/_header.scss */
   .intro {
     font-size: 1.5em;
   }
 }
 
 @media (min-width: 80em) {
-  /* line 95, ../scss/_header.scss */
+  /* line 99, ../scss/_header.scss */
   .intro-linebreak {
     display: block;
   }

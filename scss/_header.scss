@@ -1,20 +1,21 @@
 $border-thin: 1px solid #DBDBDB;
 
 .logo {
-  background: image-url("logo-small.png") no-repeat center;
-  height: 150px;
   margin: 0 auto;
   position: relative;
-  width: 100%;
-  text-indent: -9999px;
-  h1 {
-    margin: 0;
+  img {
+    max-width: 9em;
+    @include breakpoint(30em, $no-query) {
+      max-width: none;
+    }
+    @include breakpoint(50em, $no-query) {
+      position: absolute;
+      left: 0;
+    }
   }
   @include breakpoint(50em, $no-query) {
-    background: image-url("logo.png") no-repeat center;
     height: 200px;
-    margin-top: -2.5em;
-    position: absolute;
+    width: 181px;
   }
 }
 
@@ -23,7 +24,7 @@ header {
   box-shadow: $shadow;
   position: relative;
   @include breakpoint(50em, $no-query) {
-    padding: 4em 0 6.9em;
+    padding: 2em 0 6.9em;
   }
 }
 
@@ -31,6 +32,9 @@ header {
   background: white;
   margin-top: 1.15em;
   padding: .4em 0;
+  @include breakpoint(50em, $no-query) {
+    margin-top: -9.15em;
+  }
   h2 {
     border-top:     $border-thin;
     border-bottom:  $border-thin;
