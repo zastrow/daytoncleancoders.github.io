@@ -684,13 +684,14 @@ header {
 .article-block address {
   margin-bottom: 1em;
   font-style: normal;
+  background: none;
 }
 /* line 129, ../../../.rvm/gems/ruby-1.9.3-p374/gems/breakpoint-2.0.2/stylesheets/_breakpoint.scss */
 .no-mq .article-block {
   border: 5px solid white;
 }
 
-/* line 128, ../scss/_events.scss */
+/* line 129, ../scss/_events.scss */
 .article-wrapper {
   display: inline-block;
   margin: 0 auto;
@@ -698,40 +699,40 @@ header {
   width: 100%;
 }
 
-/* line 135, ../scss/_events.scss */
+/* line 136, ../scss/_events.scss */
 #past {
   box-shadow: 1px 1px 2px #8a8a8a;
   position: relative;
 }
-/* line 143, ../scss/_events.scss */
+/* line 144, ../scss/_events.scss */
 .no-mq #past h1:before, .no-mq #past h1:after {
   background: black;
 }
-/* line 148, ../scss/_events.scss */
+/* line 149, ../scss/_events.scss */
 #past time {
   font-size: 0.9em;
   display: block;
   margin: 0.9em 0;
 }
-/* line 152, ../scss/_events.scss */
+/* line 153, ../scss/_events.scss */
 #past time:before, #past time:after {
   content: "–";
   font-weight: bold;
   color: #9bc236;
 }
-/* line 157, ../scss/_events.scss */
+/* line 158, ../scss/_events.scss */
 #past time:before {
   padding-right: .5em;
 }
-/* line 160, ../scss/_events.scss */
+/* line 161, ../scss/_events.scss */
 #past time:after {
   padding-left: .5em;
 }
-/* line 164, ../scss/_events.scss */
+/* line 165, ../scss/_events.scss */
 #past h2 {
   font-size: 1em;
 }
-/* line 167, ../scss/_events.scss */
+/* line 168, ../scss/_events.scss */
 #past article {
   border: 4px solid black;
   margin-bottom: 0.9em;
@@ -750,7 +751,7 @@ header {
 .no-mq #past article {
   width: 19.2%;
 }
-/* line 182, ../scss/_events.scss */
+/* line 183, ../scss/_events.scss */
 #past a {
   background: white url('../img/button-check.png?1361824609') no-repeat 1.6em 0.8em;
   border: 1px solid white;
@@ -772,7 +773,7 @@ header {
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 201, ../scss/_events.scss */
+/* line 202, ../scss/_events.scss */
 #past a:hover {
   -webkit-box-shadow: 1px 1px 0 #c6c6c6;
   -moz-box-shadow: 1px 1px 0 #c6c6c6;
@@ -788,20 +789,20 @@ header {
   padding-bottom: 2em;
 }
 
-/* line 214, ../scss/_events.scss */
+/* line 215, ../scss/_events.scss */
 .article-title {
   min-height: 2.9em;
   padding: 0 1em;
 }
 
-/* line 220, ../scss/_events.scss */
+/* line 221, ../scss/_events.scss */
 .locations-detail {
   display: inline-block;
   font-size: .7em;
   margin: 1.2em auto 1em;
 }
 
-/* line 226, ../scss/_events.scss */
+/* line 227, ../scss/_events.scss */
 .attention {
   background: #9bc236;
   color: black;
@@ -819,7 +820,7 @@ header {
   padding: 1em 0 0.5em;
 }
 
-/* line 242, ../scss/_events.scss */
+/* line 243, ../scss/_events.scss */
 .arrow-down {
   border-left: 60px solid transparent;
   border-right: 60px solid transparent;
@@ -837,7 +838,7 @@ header {
   margin: 1.5em auto -4.2em;
 }
 
-/* line 254, ../scss/_events.scss */
+/* line 255, ../scss/_events.scss */
 .note {
   clear: both;
   padding: 1em 4% 2em;
@@ -886,6 +887,8 @@ footer ul {
 footer li {
   background: black;
   display: inline-block;
+  *display: inline;
+  zoom: 1;
   height: 4em;
   width: 4em;
   margin-right: 0.2em;
@@ -899,7 +902,7 @@ footer li {
   -o-transition: background 0.2s ease;
   transition: background 0.2s ease;
 }
-/* line 38, ../scss/_footer.scss */
+/* line 40, ../scss/_footer.scss */
 footer li:hover {
   background: #121606;
 }
@@ -912,7 +915,7 @@ footer li:hover {
   margin-right: 0;
   margin-left: 0.8em;
 }
-/* line 49, ../scss/_footer.scss */
+/* line 51, ../scss/_footer.scss */
 footer p {
   float: left;
 }
@@ -921,12 +924,12 @@ footer p {
   width: 76%;
 }
 
-/* line 63, ../scss/_footer.scss */
+/* line 65, ../scss/_footer.scss */
 .footer-primaryText {
   text-shadow: 1px 1px 1px #7b9a2b;
 }
 
-/* line 67, ../scss/_footer.scss */
+/* line 69, ../scss/_footer.scss */
 .footer-wrapper, .copyright small, .chirp, .arrow-container {
   width: 86%;
   margin: 0 auto;
@@ -941,7 +944,7 @@ footer p {
   max-width: 50em;
 }
 
-/* line 82, ../scss/_footer.scss */
+/* line 84, ../scss/_footer.scss */
 .icon-github, .icon-twitter {
   color: #9bc236;
   font-size: 2.3em;
@@ -953,7 +956,7 @@ footer p {
   padding-top: 0.32em;
 }
 
-/* line 93, ../scss/_footer.scss */
+/* line 95, ../scss/_footer.scss */
 [data-icon]:before {
   font-family: 'ddc-social';
   content: attr(data-icon);
@@ -965,7 +968,7 @@ footer p {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 105, ../scss/_footer.scss */
+/* line 107, ../scss/_footer.scss */
 .copyright {
   background: black;
   color: #8a8a8a;
@@ -974,7 +977,7 @@ footer p {
   text-transform: uppercase;
   letter-spacing: .1em;
 }
-/* line 114, ../scss/_footer.scss */
+/* line 116, ../scss/_footer.scss */
 .copyright small {
   display: block;
 }
@@ -990,7 +993,7 @@ footer p {
   max-width: 60em;
 }
 
-/* line 130, ../scss/_footer.scss */
+/* line 132, ../scss/_footer.scss */
 .tweets {
   display: none;
   background: #85a62e;
@@ -1002,7 +1005,7 @@ footer p {
 .no-mq .tweets {
   padding-top: 0.5em;
 }
-/* line 139, ../scss/_footer.scss */
+/* line 141, ../scss/_footer.scss */
 .tweets a {
   color: black;
 }
@@ -1014,7 +1017,7 @@ footer p {
 .no-mq .tweets .chirp {
   max-width: 60em;
 }
-/* line 150, ../scss/_footer.scss */
+/* line 152, ../scss/_footer.scss */
 .tweets .chirp p {
   margin-top: 1.9em;
   margin-bottom: .5em;
@@ -1032,7 +1035,7 @@ footer p {
 .no-mq .tweets .tweet-container:first-of-type {
   margin-right: 6%;
 }
-/* line 168, ../scss/_footer.scss */
+/* line 170, ../scss/_footer.scss */
 .tweets .meta {
   font-size: .8em;
   font-style: italic;
@@ -1043,7 +1046,7 @@ footer p {
   max-width: 60em;
 }
 
-/* line 180, ../scss/_footer.scss */
+/* line 182, ../scss/_footer.scss */
 .arrow-up {
   width: 0;
   height: 0;

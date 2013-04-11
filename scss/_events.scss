@@ -119,6 +119,7 @@
   address {
     margin-bottom: 1em;
     font-style: normal;
+    background: none;
   }
   @include breakpoint(17em, $no-query) {
     border: 5px solid white;
