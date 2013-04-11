@@ -34,7 +34,6 @@
     @include breakpoint(17em, $no-query) {
       width: 88%;
       margin: 0.8em 0;
-      border-bottom: none;
     }
   }
 }
