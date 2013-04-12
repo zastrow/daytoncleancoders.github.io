@@ -1,18 +1,7 @@
 footer {
   background: $base;
-  color: white;
-  clear: left;
-  padding: 1.2em 0 2.2em;
+  padding-top: 1.2em;
   text-align: left;
-  font: {
-    weight: 300;
-    size: 1.2em;
-  }
-  .footer-attention {
-    color: black;
-    font-weight: normal;
-    text-shadow: none;
-  }
   ul {
     @extend %list-reset;
     float: left;
@@ -48,35 +37,50 @@ footer {
       margin-left: 0.8em;
     }
   }
-  p {
-    float: left;
-    @include breakpoint(40em) {
-      width: 65%;
-    }
-    @include breakpoint(50em) {
-      width: 70%;
-    }
-    @include breakpoint(60em, $no-query) {
-      width: 76%;
-    }
+}
+
+.footer-primary-text {
+  color: white;
+  text-shadow: 1px 1px 1px darken($base, 10%);
+  font: {
+    weight: 300;
+    size: 1.2em;
+  }
+  float: left;
+  @include breakpoint(40em) {
+    width: 65%;
+  }
+  @include breakpoint(50em) {
+    width: 70%;
+  }
+  @include breakpoint(60em, $no-query) {
+    width: 76%;
   }
 }
 
-.footer-primaryText {
-  text-shadow: 1px 1px 1px darken($base, 10%);
+.footer-attention {
+  color: black;
+  font-weight: normal;
+  text-shadow: none;
 }
 
-.footer-wrapper, .copyright small, .chirp, .arrow-container {
+.footer-wrapper, .arrow-container, .chirp, .copyright small {
   width: 86%;
   margin: 0 auto;
   @include breakpoint(50em, $no-query) {
     width: 85%;
   }
 }
-
-.footer-wrapper {
+.footer-wrapper, .arrow-container, .chirp {
   @include breakpoint(60em, $no-query) {
-    max-width: 50em;
+    max-width: 60em;
+  }
+}
+
+.copyright small {
+  display: block;
+  @include breakpoint(60em, $no-query) {
+    max-width: 100em;
   }
 }
 
@@ -113,20 +117,6 @@ footer {
     transform: uppercase;
   }
   letter-spacing: .1em;
-  small {
-    display: block;
-    @include breakpoint(60em, $no-query) {
-      width: auto;
-      margin: 0;
-    }
-  }
-  .copyright-wrapper {
-    @include breakpoint(60em, $no-query) {
-      margin: 0 auto;
-      width: 85%;
-      max-width: 60em;
-    }
-  }
 }
 
 .tweets {
@@ -135,26 +125,43 @@ footer {
   color: black;
   padding: 2.3em 0 2em;
   text-align: left;
+  margin-top: 2.6em;
   @include breakpoint(40em, $no-query) {
     padding-top: 0.5em;
+    margin-top: 1.4em;
   }
-  a {
-    color: black;
+}
+
+.chirp {
+  @include breakpoint(40em, $no-query) {
+    margin-top: 0;
   }
-  .chirp {
+  &:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0; 
+    border-left: 2em solid transparent;
+    border-right: 2em solid transparent;
+    border-bottom: 1.4em solid darken($base, 7%);
+    margin-top: -3.5em;
+    margin-left: 0;
     @include breakpoint(40em, $no-query) {
-      margin-top: 0;
-    }
-    @include breakpoint(60em, $no-query) {
-      max-width: 60em;
+      float: right;
+      margin-right: 5.2em;
+      margin-left: 0;
+      margin-top: -1.8em;
     }
   }
-  .chirp p {
+  p {
     margin-top: 1.9em;
     margin-bottom: .5em;
     @include breakpoint(40em, $no-query) {
       margin-bottom: 1em;
     }
+  }
+  a {
+    color: black;
   }
   .tweet-container {
     @include breakpoint(40em, $no-query) {
@@ -170,27 +177,5 @@ footer {
   .meta {
     font-size: .8em;
     font-style: italic;
-  }
-}
-
-.arrow-container {
-  @include breakpoint(60em, $no-query) {
-    max-width: 60em;
-  }
-}
-
-.arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 2em solid transparent;
-  border-right: 2em solid transparent;
-  border-bottom: 1.4em solid darken($base, 7%);
-  margin-top: -3.5em;
-  margin-left: 0.4em;
-  @include breakpoint(40em, $no-query) {
-    float: right;
-    margin-right: 6.7em;
-    margin-left: 0;
-    margin-top: -1.8em;
   }
 }

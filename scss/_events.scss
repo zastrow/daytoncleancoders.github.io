@@ -83,13 +83,6 @@
       margin: 0 .5em;
     }
   }
-  time {
-    color: $base;
-    font-size: 1em;
-    letter-spacing: .15em;
-    display: block;
-    margin-bottom: .5em;
-  }
   a {
     background: lighten($secondary, 10%);
     color: black;
@@ -113,16 +106,50 @@
   }
 }
 
+.upcoming-featured, .upcoming-standard {
+  time {
+    font-size: 1em;
+    letter-spacing: .15em;
+    display: block;
+    margin-bottom: .5em;
+  }
+}
+
+.upcoming-featured {
+  time {
+    color: $base;
+  }
+  .upcoming-title {
+    @include arrow($base);
+  }
+}
+
+.upcoming-standard {
+  time {
+    color: lighten($secondary, 10%);
+  }
+  .upcoming-title {
+    @include arrow(lighten($secondary, 10%));
+  }
+}
+
 .article-block {
   border: none;
   padding: 4.5em 0 2em;
-  address {
-    margin-bottom: 1em;
-    font-style: normal;
-    background: none;
-  }
   @include breakpoint(17em, $no-query) {
     border: 5px solid white;
+  }
+  .vcard {
+    .adr {
+      margin-bottom: 1em;
+      font-style: normal;
+      background: none;
+    }
+    .details {
+      display: inline-block;
+      font-size: .7em;
+      margin: 0em auto 2.4em;
+    }
   }
 }
 
@@ -162,9 +189,6 @@
       padding-left: .5em;
     }
   }
-  h2 {
-    font-size: 1em;
-  }
   article {
     border: 4px solid black;
     margin-bottom: 0.9em;
@@ -178,6 +202,11 @@
     }
     @include breakpoint(60em, $no-query) {
       width: 19.2%;
+    }
+    h2 {
+      font-size: 1em;
+      min-height: 2.9em;
+      padding: 0 1em;
     }
   }
   a {
@@ -209,46 +238,6 @@
   }
   @include breakpoint(40em, $no-query) {
     padding-bottom: 2em;
-  }
-}
-
-.article-title {
-  min-height: 2.9em;
-  padding: 0 1em;
-  
-}
-
-.locations-detail {
-  display: inline-block;
-  font-size: .7em;
-  margin: 1.2em auto 1em;
-}
-
-.attention {
-  background: $base;
-  color: black;
-  letter-spacing: .3em;
-  font-size: .8em;
-  margin: 0 auto -2.9em;
-  width: 6.6em;
-  padding: 0.7em 0 0.1em;
-  position: relative;
-  z-index: 1;
-  @include breakpoint(17em, $no-query) {
-    width: 8em;
-    padding: 1em 0 0.5em;
-  }
-}
-
-.arrow-down {
-  @include arrow-border(60px, 30px);
-  width: 0; 
-  height: 0;
-  margin: 1.9em auto -4.2em;
-  position: relative;
-  @include breakpoint(17em, $no-query) {
-    @include arrow-border(70px, 50px);
-    margin: 1.5em auto -4.2em;
   }
 }
 

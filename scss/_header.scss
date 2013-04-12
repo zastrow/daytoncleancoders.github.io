@@ -8,6 +8,7 @@ $border-thin: 1px solid #DBDBDB;
     width: 181px;
   }
   img {
+    width: 181px;
     max-width: 9em;
     @include breakpoint(30em, $no-query) {
       max-width: none;
@@ -95,8 +96,8 @@ header {
   }
 }
 
-@media (min-width: 80em) {
-  .intro-linebreak {
+.intro-linebreak {
+  @include breakpoint(80em, $no-query) {
     display: block;
   }
 }
@@ -104,15 +105,15 @@ header {
 .dang-son {
   display: none;
   border: 4px solid darken($secondary, 20%);
-  position: absolute;
+  position: fixed;
   color: darken($secondary, 25%);
   background: lighten($secondary, 20%);
   width: 15em;
   padding: 1em;
   font-size: .9em;
   margin-left: 3.7em;
+  z-index: 2;
   @include transition(all .5s ease);
-  @include box-shadow(1px 1px 2px $secondary);
   @include breakpoint(118em) {
     display: block;
   }

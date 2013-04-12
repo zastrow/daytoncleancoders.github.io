@@ -10,6 +10,7 @@ $breakpoint-no-query-wrappers: true;
 @import 'fonts';
 @import 'normalize';
 @import 'document';
+@import 'lte-ie8';
 @import 'nav';
 @import 'header';
 @import 'events';

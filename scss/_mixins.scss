@@ -1,5 +1,34 @@
-@mixin arrow-border($lr, $top) {
+@mixin arrow-border($lr, $top, $color) {
   border-left: $lr solid transparent;
   border-right: $lr solid transparent;
-  border-top: $top solid $base;
+  border-top: $top solid $color;
+}
+
+@mixin arrow($background-color) {
+  background: $background-color;
+  color: black;
+  letter-spacing: .2em;
+  font-size: .7em;
+  margin: 0 auto -2.2em;
+  width: 9em;
+  padding: 0.7em 0 0.1em;
+  position: relative;
+  z-index: 1;
+  @include breakpoint(17em, $no-query) {
+    width: 10em;
+    padding: 1em 0 0.5em;
+  }
+  &:after {
+    @include arrow-border(70px, 35px, $background-color);
+    content: "";
+    display: block;
+    width: 0; 
+    height: 0;
+    margin: -0.1em 0 -2.8em -1.7em;
+    position: relative;
+    @include breakpoint(17em, $no-query) {
+      @include arrow-border(80px, 50px, $background-color);
+      margin: -0.1em 0 -4.1em -2.1em;
+    }
+  }
 }

@@ -9,7 +9,7 @@ nav {
     padding: 0 1%;
   }
   a {
-    background: #F0F0F0;
+    background: lighten($secondary, 40%);
     @include border-radius(.25em);
     color: $secondary;
     padding: 0.2em 0.4em;

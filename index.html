@@ -17,7 +17,6 @@
     <!--[if gt IE 8]><!--> <link rel="stylesheet" href="css/base.css"> <!--<![endif]-->
     <!--[if (lte IE 8)&(!IEMobile)]> <link rel="stylesheet" media="all" href="css/no-mq.css"> <![endif] -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="js/chirp.min.js"></script>
     <!--[if lte IE 7]><script src="js/lte-ie7.js"></script><![endif]-->
   </head>
   <body>
@@ -36,7 +35,7 @@
         </ul>
       </nav> <!-- end nav -->
       <div class="logo">
-        <a href="/" title="Dayton Clean Coders"><img src="img/logo.png" alt="Dayton Clean Coders logo" width="181px" /></a>
+        <a href="/" title="Dayton Clean Coders"><img src="img/logo.png" alt="Dayton Clean Coders logo" /></a>
         <h1 class="screen-reader-text">Dayton Clean Coders</h1>
       </div>
       <div class="tagline-wrapper">
@@ -51,38 +50,46 @@
     <section id="upcoming" class="clearfix">
       <h1><b>Upcoming Meetings</b></h1>
       <div class="article-wrapper">
-        <article>
+        <article class="upcoming-featured">
           <time datetime="2013-03-15 11:00">03/05/13</time>
-          <p class="attention">Meet<br />Here</p>
-          <div class="arrow-down"></div> <!-- for CSS arrow -->
+          <p class="upcoming-title">Upcoming<br />Meetup</p>
           <div class="article-block">
             <time datetime="2013-03-15 11:00">11:00 AM - 12:30&nbsp;PM</time>
-            <h2>Little Lines</h2>
-            <address>
-              50 Chestnut Street, Suite 224<br />
-              Beavercreek, OH 45440<br />
-              <span class="locations-detail">Located at the Greene</span><br />
-            </address>
+            <div class="vcard">
+              <div class="org"><h2>Little Lines</h2></div>
+              <div class="adr">
+                <div class="street-address">50 Chestnut Street, Suite 224</div>
+                <span class="locality">Beavercreek</span>
+                , 
+                <span class="region">OH</span>
+                <span class="postal-code">45440</span>
+              </div>
+              <span class="details">Located at the Greene</span>
+            </div>
             <a href="http://goo.gl/maps/Nisev" title="View Map">View Map</a>
           </div>
         </article>
-        <article>
+        <article class="upcoming-standard">
           <time datetime="2013-03-19 11:00">03/19/13</time>
-          <p class="attention">Meet<br />Here</p>
-          <div class="arrow-down"></div> <!-- for CSS arrow -->
+          <p class="upcoming-title">Following<br />Meetup</p>
           <div class="article-block">
             <time datetime="2013-03-15 11:00">11:00 AM - 12:30&nbsp;PM</time>
-            <h2>Sparkbox</h2>
-            <address>
-              11 East Fifth Street<br />
-              Dayton, OH 45402<br />
-              <span class="locations-detail">Located in Oregon District</span><br />
-            </address>
+            <div class="vcard">
+              <div class="org"><h2>Sparkbox</h2></div>
+              <div class="adr">
+                <div class="street-address">11 East Fifth Street</div>
+                <span class="locality">Dayton</span>
+                , 
+                <span class="region">OH</span>
+                <span class="postal-code">45402</span>
+              </div>
+              <span class="details">Located in Oregon District</span>
+            </div>
             <a href="http://goo.gl/maps/cHxTs" title="View Map">View Map</a>
           </div>
         </article>
       </div> <!-- end .article-wrapper -->
-      <p class="note">*Meeting locations alternate between Little Lines and Sparkbox offices on the first Tuesday of every month.</p>
+      <p class="note">*We meet at Little Lines on the first Tuesday of each month, and at Sparkbox on the third Tuesday of every month.</p>
     </section> <!-- end #meetings -->
 
     <section id="past" class="clearfix">
@@ -90,68 +97,45 @@
       <div class="article-wrapper clearfix">
         <article>
           <time datetime="2013-02-09 11:00">02/09/13</time>
-          <div class="article-title">
-            <h2>Becoming a Software Craftsman</h2>
-          </div>
-          <a href="#" title="View Map">View Code</a>
+          <h2>Becoming a Software Craftsman</h2>
+          <a href="#" title="View Code">View Code</a>
         </article>
         <article>
           <time datetime="2013-01-09 11:00">01/09/13</time>
-          <div class="article-title">
-            <h2>First Causes: Open/Closed Principle Violation</h2>
-          </div>
-          <a href="#" title="View Map">View Code</a>
+          <h2>First Causes: Open/Closed Principle Violation</h2>
+          <a href="#" title="View Code">View Code</a>
         </article>
         <article>
           <time datetime="2012-12-09 11:00">12/09/12</time>
-          <div class="article-title">
-            <h2>Conscious Practice: A little poll</h2>
-          </div>
-          <a href="#" title="View Map">View Code</a>
+          <h2>Conscious Practice: A little poll</h2>
+          <a href="#" title="View Code">View Code</a>
         </article>
         <article>
           <time datetime="2012-11-09 11:00">11/09/12</time>
-          <div class="article-title">
-            <h2>Inaugural Dayton Clean Coders</h2>
-          </div>
-          <a href="#" title="View Map">View Code</a>
+          <h2>Inaugural Dayton Clean Coders</h2>
+          <a href="#" title="View Code">View Code</a>
         </article>
-      </div> <!-- end .article-wrapper -->
-    </section> <!-- end #meetings-past -->
+      </div>
+    </section>
 
     <footer id="contact" class="clearfix">
       <div class="footer-wrapper clearfix">
-        <p class="footer-primaryText">Anyone interested in learning more about building a better web is welcome to attend. We hope to see you at our next meetup! <span class="footer-attention">In&nbsp;the&nbsp;meantime, follow&nbsp;us.</span></p>
+        <p class="footer-primary-text">Anyone interested in learning more about building a better web is welcome to attend. We hope to see you at our next meetup! <span class="footer-attention">In&nbsp;the&nbsp;meantime, follow&nbsp;us.</span></p>
         <ul>
           <li><a class="icon-twitter" aria-hidden="true" data-icon="&#xe000;" href="https://twitter.com/DaytonCleanCode" title="Dayton Clean Coders on Twitter"><span class="screen-reader-text">Twitter</span></a></li>
           <li><a class="icon-github" aria-hidden="true" data-icon="&#xe001;" href="https://github.com/DaytonCleanCoders" title="Dayton Clean Coders on Github"><span class="screen-reader-text">Github</span></a></li>
         </ul>
-      </div> <!-- end .footer-wrapper -->
-    </footer> <!-- end footer -->
-
-    <section class="tweets">
-      <div class="arrow-container">
-        <div class="arrow-up"></div>
       </div>
-      <script>Chirp({
-        user:'daytoncleancode',
-        max:2,
-        templates: {
-          base: '<div class="chirp clearfix">{{tweets}}</div>',
-          tweet: '<div class="tweet-container"><p>"{{html}}"</p><span class="meta"><time>&#8211;<a href="http://twitter.com/{{user.screen_name}}/statuses/{{id_str}}">{{time_ago}}</a></time> via <a href="http://twitter.com/{{user.screen_name}}" title="{{user.name}} — {{user.description}}">@{{user.screen_name}}</a></span></div>'
-        }
-      })</script>
-    </section>
-
-    <section class="copyright">
-      <div class="copyright-wrapper">
+      <div id="tweets" class="tweets">
+      </div>
+      <section class="copyright">
         <small>&copy; 2013 Sparkbox and Little Lines. All&nbsp;rights&nbsp;reserved.</small>
-      </div>
-    </section>
+      </section>
+    </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
+    <script src="js/chirp.min.js"></script>
     <script src="js/jquery.ba-throttle-debounce.min.js"></script>
     <script src="js/main.js"></script>
   </body>
