@@ -15,6 +15,7 @@ $(function () {
 
 $(window).load(function() {
   var resizer = function () {
+    $('#past article h2').css({'min-height': 0});
     var tallest_h2 = 0;
     $('#past article h2').each(function () {
       if ($(this).innerHeight() > tallest_h2 ) {
@@ -26,5 +27,5 @@ $(window).load(function() {
 
   resizer(); // set initially
 
-  $(window).on('resize', $.throttle( 100, resizer )); // adjust on browser resize
+  $(window).on('resize', $.throttle( 50, resizer )); // adjust on browser resize
 });
