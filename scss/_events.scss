@@ -83,26 +83,27 @@
       margin: 0 .5em;
     }
   }
-  a {
-    background: lighten($secondary, 10%);
-    color: black;
-    font: {
-      size: .8em;
-      weight: 400;
-    }
-    letter-spacing: .1em;
-    padding: 0.6em 1.35em;
-    text: {
-      transform: uppercase;
-      decoration: none;
-    }
-    @include transition(background .2s ease);
-    &:hover {
-      background: $secondary;
-    }
-  }
   @include breakpoint(40em, $no-query) {
      background: darken($secondary, 35%) image-url("photo.jpg") no-repeat center;
+  }
+}
+
+a.upcoming-btn {
+  background: lighten($secondary, 10%);
+  color: black;
+  font: {
+    size: .8em;
+    weight: 400;
+  }
+  letter-spacing: .1em;
+  padding: 0.6em 1.35em;
+  text: {
+    transform: uppercase;
+    decoration: none;
+  }
+  @include transition(background .2s ease);
+  &:hover {
+    background: $secondary;
   }
 }
 
@@ -249,5 +250,8 @@
   margin: 0 auto;
   @include breakpoint(40em, $no-query) {
     padding: 1.2em 4%;
+  }
+  a, a:visited {
+    color: white;
   }
 }
