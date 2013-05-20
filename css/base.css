@@ -446,7 +446,7 @@ header {
 .tagline-wrapper {
   background: white;
   margin-top: 1.15em;
-  padding: 0.4em 0;
+  padding: .4em 0;
 }
 @media (min-width: 50em) {
   /* line 32, ../scss/_header.scss */
@@ -472,7 +472,7 @@ header {
 @media (min-width: 18em) {
   /* line 53, ../scss/_header.scss */
   .tagline-wrapper h2 {
-    padding: 0.75em 0;
+    padding: .75em 0;
     font-size: .7em;
     letter-spacing: normal;
   }
@@ -657,7 +657,7 @@ header {
 /* line 59, ../scss/_events.scss */
 #upcoming h2 {
   font-size: 1.9em;
-  margin: 0 0 0.6em;
+  margin: 0 0 .6em;
 }
 @media (min-width: 28em) {
   /* line 59, ../scss/_events.scss */
@@ -692,7 +692,7 @@ header {
   /* line 72, ../scss/_events.scss */
   #upcoming article {
     width: 42%;
-    margin: 0 0.5em;
+    margin: 0 .5em;
   }
 }
 @media (min-width: 40em) {
@@ -898,7 +898,7 @@ a.upcoming-btn:hover {
 @media (min-width: 40em) {
   /* line 193, ../scss/_events.scss */
   #past article {
-    margin: 0.7em 0.5em;
+    margin: 0.7em .5em;
     width: 42%;
   }
 }
