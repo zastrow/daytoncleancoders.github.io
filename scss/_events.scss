@@ -159,6 +159,10 @@ a.upcoming-btn {
   margin: 0 auto;
   max-width: 70em;
   width: 100%;
+
+  a {
+    color: inherit;
+  }
 }
 
 #past {
