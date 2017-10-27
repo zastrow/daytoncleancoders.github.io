@@ -3,17 +3,17 @@ $border-thin: 1px solid #DBDBDB;
 .logo {
   margin: 0 auto;
   position: relative;
-  @include breakpoint(50em, $no-query) {
+  @media (min-width: 50rem) {
     height: 200px;
     width: 181px;
   }
   img {
     width: 181px;
     max-width: 9em;
-    @include breakpoint(30em, $no-query) {
+    @media (min-width: 30rem) {
       max-width: none;
     }
-    @include breakpoint(50em, $no-query) {
+    @media (min-width: 50rem) {
       position: absolute;
       left: 0;
     }
@@ -24,7 +24,7 @@ header {
   padding: 1.2em 0 1.2em;
   box-shadow: $shadow;
   position: relative;
-  @include breakpoint(50em, $no-query) {
+  @media (min-width: 50rem) {
     padding: 2em 0 6.9em;
   }
 }
@@ -33,12 +33,12 @@ header {
   background: white;
   margin-top: 1.15em;
   padding: .4em 0;
-  @include breakpoint(50em, $no-query) {
+  @media (min-width: 50rem) {
     margin-top: -9.15em;
   }
   h2 {
-    border-top:     $border-thin;
-    border-bottom:  $border-thin;
+    border-top: $border-thin;
+    border-bottom: $border-thin;
     color: $secondary;
     display: inline-block;
     font-size: .5em;
@@ -49,7 +49,7 @@ header {
         display: none;
       }
   }
-  @include breakpoint(18em, $no-query) {
+  @media (min-width: 18rem) {
     h2 {
       padding: .75em 0;
       font-size: .7em;
@@ -66,7 +66,7 @@ header {
       }
     }
   }
-  @include breakpoint(50em, $no-query) {
+  @media (min-width: 50rem) {
     span {
       &.first-tag {
         margin-right: 20em;
@@ -84,25 +84,25 @@ header {
   p {
     margin: 0;
   }
-  @include breakpoint(18em, $no-query) {
+  @media (min-width: 18rem) {
     font-size: 1.3em;
     margin: auto;
   }
-  @include breakpoint(30em, $no-query) {
+  @media (min-width: 30rem) {
     padding: 1.5em 15%;
   }
-  @include breakpoint(50em, $no-query) {
+  @media (min-width: 50rem) {
     font-size: 1.5em;
   }
 }
 
 .intro-linebreak {
-  @include breakpoint(80em, $no-query) {
+  @media (min-width: 80rem) {
     display: block;
   }
 }
 
-.dang-son {
+.dang {
   display: none;
   border: 4px solid darken($secondary, 20%);
   position: fixed;
@@ -113,8 +113,8 @@ header {
   font-size: .9em;
   margin-left: 3.7em;
   z-index: 2;
-  @include transition(all .5s ease);
-  @include breakpoint(118em) {
+  transition: all .5s ease;
+  @media (min-width: 120rem) {
     display: block;
   }
   a, a:hover, a:visited {
@@ -122,14 +122,14 @@ header {
   }
 }
 
-.dang-son:before {
+.dang:before {
   display: none;
-  content: image-url("big-screen-arrow.png") no-repeat center;
+  content: url("/img/big-screen-arrow.png") no-repeat center;
   position: absolute;
   margin-left: -11.7em;
   margin-top: 1.2em;
-  @include transition(all .3s ease);
-  @include breakpoint(118em) {
+  transition: all .3s ease;
+  @media (min-width: 118rem) {
     display: inline;
   }
 }
